@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject Player;
+    public Text timer;
 
     private void Awake()
     {
@@ -28,7 +30,12 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
+    private void Update()
+    {
+        float time = float.Parse(timer.text);
+        time -= Time.deltaTime;
+        timer.text = time.ToString("N2");
+    }
     public void GameOver()
     {
         Time.timeScale = 0f;
