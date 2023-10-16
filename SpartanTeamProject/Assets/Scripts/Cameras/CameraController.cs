@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 
@@ -10,7 +11,7 @@ public class CameraController : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private CameraModes cameraModes;
-    [SerializeField, Range(0f, 3f)] private float traceSpeedDamper;
+    [SerializeField, Range(0f, 0.5f)] private float smoothTime;
 
     [Header("Map")]
     [SerializeField] private SpriteRenderer map;
@@ -19,7 +20,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Transform curTarget;
 
     private Bounds cameraBounds;
-    private Camera camera;
+    public Camera camera;
+    private Vector3 refVector = Vector3.zero;
 
     private void Awake()
     {
@@ -34,7 +36,7 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        
+        ChaseTarget();
     }
 
     private void LateUpdate()
@@ -71,7 +73,11 @@ public class CameraController : MonoBehaviour
 
     public void ChaseTarget()
     {
-        if ( curTarget == null ) return;
+        if (curTarget == null) return;
 
+        Vector3 target = curTarget.position;
+        target.z = -10f;
+
+        transform.position = target;
     }
 }
