@@ -54,9 +54,9 @@ public class PlayerController : MonoBehaviour
         {
             powerBar.gameObject.SetActive(true);
             currentPower += Time.deltaTime * 100;
-            powerBar.value = currentPower / maxPower;
-            if (currentPower > maxPower)
+            if (currentPower > maxPower + 5)
                 currentPower = 0;
+            powerBar.value = currentPower / maxPower;
             isShoot = true;
         }
 
