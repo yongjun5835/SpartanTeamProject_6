@@ -24,7 +24,10 @@ public class ProjectileManager : MonoBehaviour
 
     public void Shoot()
     {
+        GameObject projectile = Instantiate(defaultProjectile, projectileSpawnPoint.position, Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward));
         Vector3 dir = Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward) * Vector3.right;
-        defaultProjectile.GetComponent<Rigidbody2D>().AddForce(dir * playerController.currentPower / 5, ForceMode2D.Impulse);
+        float shootPower = playerController.currentPower / 5;
+        projectile.GetComponent<Rigidbody2D>().AddForce(dir * shootPower, ForceMode2D.Impulse);
+        Debug.Log($"shootPoewr: {shootPower}");
     }
 }
