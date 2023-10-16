@@ -19,7 +19,9 @@ public class PlayerController : MonoBehaviour
     private bool isSetPower = false;
     private bool isShoot = false;
 
+    [HideInInspector]
     public Vector2 v2;
+    [HideInInspector]
     public float aimAngle;
 
     private void Awake()

@@ -17906,6 +17906,11 @@ MonoBehaviour:
   powerBar: {fileID: 953197157}
   maxPower: 100
   currentPower: 0
+  weaponBtn1: {fileID: 1033800477}
+  weaponBtn2: {fileID: 1782817603}
+  weaponBtn3: {fileID: 1305610655}
+  weaponBtn4: {fileID: 1020048425}
+  weaponBtn5: {fileID: 1983133653}
   v2: {x: 0, y: 0}
   aimAngle: 0
 --- !u!114 &2111328138

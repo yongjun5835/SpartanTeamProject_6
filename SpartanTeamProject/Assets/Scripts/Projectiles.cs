@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefaultPorjectile : MonoBehaviour
+public class Porjectiles : MonoBehaviour
 {
     private void Update()
     {
