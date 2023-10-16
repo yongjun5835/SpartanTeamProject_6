@@ -1,24 +1,26 @@
 
-public class EnemyIdleState : IState
+public class EnemyIdleState : EnemyBaseState
 {
-    public void Enter()
+    public EnemyIdleState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
     {
-        throw new System.NotImplementedException();
     }
 
-    public void Exit()
+    public override void Enter()
     {
-        throw new System.NotImplementedException();
-    }      
-
-    public void Update()
-    {
-        throw new System.NotImplementedException();
+        stateMachine.MovementSpeedModifier = 0f;
+        base.Enter();
+        StartAnimation(stateMachine.Enemy.AnimData.IdleParameterHash);
     }
 
-    public void PhysicsUpdate()
+    public override void Exit()
     {
-        throw new System.NotImplementedException();
+        base.Exit();
+        StopAnimation(stateMachine.Enemy.AnimData.IdleParameterHash);
+    }
+
+    public override void Update()
+    {
+        base.Update();
     }
 
 }

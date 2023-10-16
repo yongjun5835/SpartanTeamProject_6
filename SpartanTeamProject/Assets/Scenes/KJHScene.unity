@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 1400500145}
   m_Layer: 0
   m_Name: TestTarget
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -342,6 +342,8 @@ GameObject:
   - component: {fileID: 4000010952526490}
   - component: {fileID: 95000012910419060}
   - component: {fileID: 95000012910419061}
+  - component: {fileID: 95000012910419062}
+  - component: {fileID: 95000012910419063}
   m_Layer: 0
   m_Name: Enemy_Archer
   m_TagString: Untagged
@@ -638,7 +640,7 @@ Animator:
   m_GameObject: {fileID: 1000011043061598}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d802920b5f1124a778f16c31c3373388, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3eb70c49b85b3fa478ae319ac913480d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -661,13 +663,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae47e5f5a5f6fe44d8e1af0cbbfbea35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Data>k__BackingField: {fileID: 0}
-  <animData>k__BackingField:
+  <Data>k__BackingField: {fileID: 11400000, guid: 8f4e51f320d38794eadd9f8b3b5616f0, type: 2}
+  <AnimData>k__BackingField:
     idleParameterName: Idle
     walkParameterName: Walk
     runParameterName: Run
     attackParameterName: Attack
-    deathParameterName: Death
+    deadParameterName: Dead
+--- !u!143 &95000012910419062
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011043061598}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.7
+  m_Radius: 0.25
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.875, z: 0}
+--- !u!114 &95000012910419063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011043061598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac114dbadf134f4b902496f732a3e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 95000012910419062}
+  drag: 0.3
 --- !u!212 &212000010875391996
 SpriteRenderer:
   m_ObjectHideFlags: 0
