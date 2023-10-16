@@ -47,7 +47,7 @@ public class WeaponSelect : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("TestScene_Son");
+        SceneManager.LoadScene("MainScene");
     }
 
 

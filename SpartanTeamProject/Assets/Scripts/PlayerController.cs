@@ -65,6 +65,7 @@ public class PlayerController : MonoBehaviour
             isSetPower = false;
             Debug.Log("발사");
             anim.SetTrigger("isShoot");
+            isShoot = false;
             // 발사 로직
             ProjectileManager.instance.Shoot();
         }
