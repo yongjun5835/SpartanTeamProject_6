@@ -39,7 +39,7 @@ public class Turn : MonoBehaviour
         if (result)
         {
             // Player 동작 가능
-            GameManager.Instance.Player.gameObject.GetComponent<Playertest>().enabled = true;
+            GameManager.Instance.Player.gameObject.GetComponent<PlayerController>().enabled = true;
             // GetComponent<플레이어 동작 스크립트> << 삽입
         }
         else
