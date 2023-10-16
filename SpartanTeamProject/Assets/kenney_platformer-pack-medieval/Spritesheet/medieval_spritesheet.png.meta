@@ -1,0 +1,5891 @@
+fileFormatVersion: 2
+guid: 4648f415b641a4c4b91c5542e90ba976
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medieval_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4894a933377c68469eb3d8e34324e59
+      internalID: -22594441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c498e84221bf0747a5ab94da769911a
+      internalID: 194686491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46883bc18c6bf4645812c925dce663ad
+      internalID: -398823464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d2e92d2e4a17d47bad988199ecb306
+      internalID: -1745542270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6ef53ab83719544977c407434fb86c
+      internalID: 128612080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e5d3a50dc8c2545bd6c3e5f8cbe57a
+      internalID: 1574687269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387d41a0c9b9ff1478b787a33714d21b
+      internalID: 744248939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fd1ab84aee6874d8ba4b498e08b0e8
+      internalID: -163138495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2b5b81e46c5964cb01e1f6e667c5bb
+      internalID: -863898564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1978
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1b54dde854fe945a3435ac6c236218
+      internalID: -513555079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c696ea244264e249b1e1d757703f84a
+      internalID: 991568529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b201b9ad66eba54d800255a10c5d518
+      internalID: 386669197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb7c280661e0204c9f76902b169fd0e
+      internalID: 460950182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f5ebd0d0d87b54198f4468547a8af1
+      internalID: 639555790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1713c76f89121745a89c5dbee666d7d
+      internalID: 572677332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e445c15148ed8be4aa59a998cc54e32c
+      internalID: -136314324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e34057a04ba2a4b914911f7c58d603
+      internalID: 1085173060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7917ad6e6ad24438f1f1d0b52d48ba
+      internalID: -1703413698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1908
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cac6ccfa137c8468af6f86711c04f4
+      internalID: 808210901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2af3ca4778fe448a4932847f8377ef
+      internalID: -236135662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac235bf5463b99f4c8d3bbb0c6e269a5
+      internalID: 1639459990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e6b61fac64d2a4d85aa87d8aee4401
+      internalID: -1166983854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4d1273cb948f949b803971eae2480f
+      internalID: 390978777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f19ee574a61f44d8583c68f072a867
+      internalID: -904599621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0831c3670f01d894682043e3135fb56d
+      internalID: 998163087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1321fa9c6a1552c41be80815df4d2304
+      internalID: 765469739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fded084c37329e45a00438ae74e2d17
+      internalID: -1457439384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1838
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9543e89fd10dda44c85912ef5625b076
+      internalID: -1818996927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6418dc19434d34fa99b6fd7ece14a7
+      internalID: 581767545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6408698c4da819341a511fabbc62be33
+      internalID: 60435932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75794d4a94c5b6a4b81250e50d908478
+      internalID: 1697446573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a5a02de52991041bf6a27b56afa68b
+      internalID: -1905601991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89272327ae5d6b848b7c8e02aa44d802
+      internalID: 994565824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5893307e7aeaf0e45b41997fffc0a603
+      internalID: 1147654688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c5bedefeb2fef40b336b6252083316
+      internalID: 741373474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f47ebef269bc24db59a7596ba6a77e
+      internalID: -1183957922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1768
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c43086a3d4143942b451a40dbfcc2b1
+      internalID: -1795362284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f07ec487b32404e8f9dccb11e7847a
+      internalID: 1120724074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d562888292e0f404ba6c3f76a39e3c17
+      internalID: 1139514757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10956db3e3cfffd4d92dee760d15d438
+      internalID: 698413394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f77e346ee185594e82b484a8e450399
+      internalID: 993650164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4690794d001c7dd4fba7d1b5f98b2aa8
+      internalID: -1362585760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0647d7ca25701a45ac120c3d5781297
+      internalID: -1477553516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b115fb1c70a58148a1188b4b02015a6
+      internalID: -1953437054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6686b1d45b4ea0f4c92634b8d25a1647
+      internalID: -1799171254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1698
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab27d76f248a3784487a4c381bfc465b
+      internalID: -85070123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d921527622df5734f95fbf85e1641484
+      internalID: 318634142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47966773df6e7249ba5e9d9287f2ab8
+      internalID: 105017366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f4bcf6486db7d469b0b60df5cac405
+      internalID: -2025967652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d4f65f12d1069469bc58d4a6aaa695
+      internalID: 897057150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916f8816fc324ed4a875ab4b03d719ae
+      internalID: -1042032552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4db8590b5d464a4cbfa361c21eb4e2d
+      internalID: -1670571805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0ce39c7447f1e4a9a48b7d989bf523
+      internalID: 1968349480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f34c488b2d4454880e9424bc4e3dfa
+      internalID: -95675858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1628
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34882a0b14a6928419f113e8434be3b5
+      internalID: 659083335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565e9c835af2e2449b5fdead78496f6c
+      internalID: 768511790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79d89d93b92e294abf9e62a07876ad0
+      internalID: 426007483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0be6d4fbdd617418137c1119cea544
+      internalID: 169994977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c816d917965f86a4c9918d3dae586573
+      internalID: -1537882781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcee6834899e3e445bcab6d4fa5915c1
+      internalID: -1819297431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecdd29cecdb46f4285d347976657085
+      internalID: -1863904212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d454964ab24902448b02b437f414e90
+      internalID: -425923266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8b5dc934ec7034cba457074b3d28af
+      internalID: 846665018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1558
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69b9e220607e3548987974a9e66e7fa
+      internalID: -127849913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1813a7faf28676642b7a30d21fcbe65e
+      internalID: -1148018023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6b2fa42e5c8724b9d446e0d556cd13
+      internalID: 654718698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650d535acc73d654bb41422182ae7f30
+      internalID: -1779579339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1015781a6ec8746b52c05f3f3dab79
+      internalID: 799103662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818bc9a2c888a124085da2b786124f12
+      internalID: 40474172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0185db50930755d42b3d807432a7435b
+      internalID: 174440984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81aa146a1d50734a9373d06a7f9adce
+      internalID: -1029015362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7309baeb671cfd743919f6c437d1751d
+      internalID: 614206449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1488
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8268e7470ed3fc74aaf97d2c3f44beb7
+      internalID: 1200460297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ed60bdc52339d4d92f4fa44039ecae
+      internalID: -707912594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f50cda683e7674bb6f049e677ff9cf
+      internalID: 1268544655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfe5ea9e83e2a44bba1f9cf203d79c4
+      internalID: 932042939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068f19814d593924b8c9af76fbf83b5c
+      internalID: -840707492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9281be1bb3fc391408e4299dc1131843
+      internalID: 1555236162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba35af0b6688a6348b609ea26f4978c7
+      internalID: 429619551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5a4f5494ec7e844a93d531baf06f00
+      internalID: 2022412178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19224e16b3ac20e4a86f45053e4749a7
+      internalID: -275405513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1418
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ddb08ae39a4af4e988afde147aa9cb
+      internalID: -96357304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df34e5713d86364a9cc3be4cee41295
+      internalID: -1926267574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790fffebc146219438b0918a787404ff
+      internalID: -389127761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e610532054e0a1498a252508871e914
+      internalID: -2017782106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4b97c4d427ccf49b80a701f5708987
+      internalID: -1177413023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c5633e258cb8e4b969823ca9d27efe
+      internalID: -1214116126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85dd878eebf009646ac5cfb370f66c45
+      internalID: 852826767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eb9797812e69a45aa52384d1864456
+      internalID: -1011442215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80eea1356c668146b5ba3eb93b78f4a
+      internalID: -1587398949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1348
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327cd7362df5b5143957f11716f1b70f
+      internalID: 1007488763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141a48da260843741a690a9efeca846e
+      internalID: 1501426229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65747852be2f5ee4296f4d4a5c6a9223
+      internalID: 1953954946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b2c655cd99c9946ae74c005df6e1c3
+      internalID: 1289192338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beba824607ad8004ab32856676d023a5
+      internalID: -849526414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685cbd7a737ab3b458841afdcc100c63
+      internalID: 341407980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc609e8e42bf83740b27051cb9954b49
+      internalID: 954746014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a16696b631fc1540815e59df70ef13e
+      internalID: -1129972820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7e30d09a7043b41acd079a5b5c6635
+      internalID: -1721272786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1278
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f918516582fee9468da734579d1c830
+      internalID: -2091702023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ecd6ecfb7046143ab186e0f397f5a6
+      internalID: 1217615442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b933a1a20955d441ac68f9ce11d88bf
+      internalID: -1984682325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877f3808de7410841967342805135bf5
+      internalID: 544090800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0810ab5ff2a9acc4e98d7cfaa424f53f
+      internalID: -626084333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c268fa81297765447850df8adb94f513
+      internalID: 1026549024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ee213507eea404da9b40266a416928
+      internalID: -1514541618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da84fb6e50c7d64478751f8ed7cb8bfc
+      internalID: 617247586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02532081b92da94dbc15b06dc236614
+      internalID: -2104363246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1208
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855ad3d056acd324ea63eba6e678082a
+      internalID: -2084011899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e0d2ab59ab7124c994f347ce6fa970
+      internalID: -1421478226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fecd8b482eeb2d41a7234f6396086c1
+      internalID: -102541866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa25fe04a1a2caa42844e4e55ab1225e
+      internalID: 1288155575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d3f9103a3ae9c4ab6845c3d55b5187
+      internalID: -103917881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349041488b38288489ab945b5d29f425
+      internalID: 823325722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16388091d99820c4b96e2c44c5fa1239
+      internalID: 1762803827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63ce8601d630224da3f02fe84d94569
+      internalID: -1956015652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07b7c89a86b0684fa9ff0d2348566e5
+      internalID: -108720508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1138
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca32007685af93449af0151c56758e0
+      internalID: -2079482355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fa231bea70cc049a7574ceded8cff4
+      internalID: 1338347415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e903b3469854442bc93e099d103a0f
+      internalID: -11706561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737c5ba5be1cd7442a4736a5daec45a2
+      internalID: -606660553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655ba7aaefc0c1f42a9cf9a169a3028e
+      internalID: -362206708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164b52be3ba903e4d8e454a995ce0821
+      internalID: 1965986966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db86d039bdeafa4cac3cb52d7f627e5
+      internalID: 1397240080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5c07474787e2946b111eb9dfd77081
+      internalID: 631206903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ca1343510569345b7c35e9dc387225
+      internalID: -14154547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1068
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc05f80fd9e756f44b044958f356405b
+      internalID: 922228250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1f87c0284bd974a8f8f65268c19d1a
+      internalID: 882005679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a77f1d5bc3b9a478ba850d301cdaaf
+      internalID: -1891791584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858cf50b764207a4ca1628ffbc9fd841
+      internalID: 918454520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aea25d4b4f93d43b937b74900d2914
+      internalID: 492193881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f9cf08b650d064b8664cd929467380
+      internalID: -1249049318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7e4de9f60daf649bef6b8eaae80d05
+      internalID: -460257845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a316ec01405203040928d8496379578a
+      internalID: -1524684768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9ad6e12b50fe347ab3ba49a15c605f
+      internalID: -1852468354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 998
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091626fdcca8ce74f83ead566be86532
+      internalID: 1029475121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e56d3f0c1d32d42a2c1530ff41822a
+      internalID: 644576850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29604021e12e17f4c8ca02c7c9306ecd
+      internalID: -936550956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a995c00e9723146906cbf623dc4be5
+      internalID: 469541848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237a78804b9be97429e48e113878c703
+      internalID: -642037337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95c7ab0dcd7c3e45a46301bee95f9fe
+      internalID: -1021326611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3b5197c9f9d004daa43cfe9fbbddd2
+      internalID: -574773816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938567adefdeac645a0fc86e499ba4f8
+      internalID: 1623363878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db017ebf3a9798e4da2105f2682f1934
+      internalID: -1069654699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 928
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544c65e1c5e3a9d448cf3a637bd1bd5c
+      internalID: -1346588754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293e9347d858d8f4c9e474ae05b392c0
+      internalID: -1197505109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b0af37f60f843438018ca1a661f4a8
+      internalID: 739525278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fbfdb7e3c936b74190ccc2afb8e8186
+      internalID: 706220206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c50c5464ccd46d428151ca9d15e8a5e
+      internalID: -1019535332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eddc1b9ea54fff4c809d27ca0dd6ecb
+      internalID: -547120759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9c111ce727bef4d9743b21ffbe2d10
+      internalID: 347674031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98dbbfaa56112bc45a339e72bc089b3d
+      internalID: -1169252166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96987fcbe8956e94096ef34e29b145ca
+      internalID: 1885431121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 858
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be99357a71589640896ec0c3a8166ab
+      internalID: 1814744020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f912772a678e3ec40a2e7ecaf8866a5a
+      internalID: -132108158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea4f451c976a7c419618c948db9a7e6
+      internalID: 1372258148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a552e8cd5d33cdb429c0d2da0406f17f
+      internalID: -1833214667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee4feaad5962f0409881f8b9fbb5b2a
+      internalID: -462170892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a19c879af7940f42964fe83ae8e9fe5
+      internalID: -75057006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d234384ba321de4281006eca313fc54
+      internalID: 484617644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0138c20e85b3d3e41b2a588473d681d9
+      internalID: -598559950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412b728e71f5a9d4d9e8584d8a5f8402
+      internalID: 395939402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 788
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdbd6718dcf1e144af940c4894e921b
+      internalID: 546474542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3334b1a6440edea4ebf66e8e06477ea3
+      internalID: -934052203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dad6bb37369abf44a0139ada799e884
+      internalID: -119937849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1822c7ad8f094841b792fd086a5757d
+      internalID: -980624221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f69fd3c45ca2c4ab0ca8de3e779489
+      internalID: -1175468093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1261545bc48002449319bee14161655
+      internalID: 703551842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f370f267b51a58c4ba67879ccd698276
+      internalID: -1184849573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3398ecef781b284cb3e7673852cb437
+      internalID: 2048963506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902fdc973d555c64dabf171b1cb6c3f6
+      internalID: -1088642778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 718
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77505f2647d54fe479d2de5311304595
+      internalID: 354494597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133a636c6a9ac864e8d1c9c56fde0e32
+      internalID: 1467895851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eca277ab55d4040a233552e1b68b2c
+      internalID: -1414004979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6979a337ae7c05d40803f0eeca82dd30
+      internalID: -1105551688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6898ecbcf699624196c5ee68896d1a8
+      internalID: 1803316946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76bb9adde1be7b4f8d975d2852e96cd
+      internalID: -678231049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed290beb316bb264e8a73eeed792886a
+      internalID: 957916462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42349987498e3a409b74fed0f3c8040
+      internalID: -1915043992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde994bb988602d4eb463e47cc123d8b
+      internalID: 1102078138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_180
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 648
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa888aebbdcce4a49ab0960b343ceb99
+      internalID: -1962556193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_181
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f16f09d68406f498707249a1b2820a
+      internalID: -1789187987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_182
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc9511ce31e6074c83dc06e98e9312c
+      internalID: -584408448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_183
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31960ab7b7a7df4da23dba889bfdaca
+      internalID: -401287640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_184
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1254039aefeec54fb5bafc6698193fa
+      internalID: -1447782995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_185
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1057600d371516b41aad4fa4560103f1
+      internalID: -1147084674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_186
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0af30f4c81a754e96f419fc5df4c0b
+      internalID: 243124190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_187
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb56f073149f55469e453859ae3e37c
+      internalID: -1585725791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_188
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ba302d4666478448a787ffd81ba49a
+      internalID: -1168711923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_189
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 578
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e857826075dc64bbaa4a5ff54a888a
+      internalID: 780871452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398cd880133c6fc4185398e45c87bdbf
+      internalID: -1509160186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_191
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c550be7b1b2af6a4287577bdf81147ef
+      internalID: -375707344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_192
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16fe635d586e464bb03b45ada60c4e5
+      internalID: 1701945141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_193
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297444e430fd26946b67dfcd02023c37
+      internalID: 875207591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_194
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b403da0a2b1b6498fc8dc8f249015a
+      internalID: -1409875533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_195
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354a5863ae991794dad634b9dd827263
+      internalID: -266649255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_196
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afd1729b7690a944abbaeb3042705a0
+      internalID: -705410626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_197
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea634259e3745ea4eb0a3ac0502c1e9b
+      internalID: 1408712699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_198
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 508
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c708f3d8dad098749a0832c2bf39a388
+      internalID: -992085617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_199
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3f2139f76e5154ba0bcbd73efb0b62
+      internalID: -1893457564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_200
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c1d22a6b03b3d4aa00846ed56eb91a
+      internalID: 1478820802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_201
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c825cdf2cd9681941b6e7fc1a4b8e115
+      internalID: 1506882423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_202
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e9b0a9e26aff041bed53d32b00c946
+      internalID: -1621504871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_203
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98560f1e39fc05e42b294de1b39a3f55
+      internalID: 2074883671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_204
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b23dd2c5994094ea44c45877a7f87e
+      internalID: 1266700233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_205
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fc5a6dd6ee4894d9f292b8fcd3930d
+      internalID: -576478041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_206
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badbc055ec110374898371cc8424d5b5
+      internalID: 2118338105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_207
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 438
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968ae246b3b31054cb6e116e70e43844
+      internalID: 625492389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_208
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4646c60bfdb1c41a40b7cb2d935b05
+      internalID: -738181386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_209
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8323ef37d55d334e9643de04c9bb6cc
+      internalID: 2133709916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_210
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a026771a9dd7b478aa7ae1ef32486e
+      internalID: 1679631481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_211
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2e10b9f337732459c10af3d1bc53ae
+      internalID: 130909748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_212
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88eb1410b93d4b94aa4831d0678ae482
+      internalID: 176062767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_213
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bec09456171b9549ab35e1e989d87f7
+      internalID: -1032858674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_214
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9c75b9bb3696e43adc5f6e509d3334
+      internalID: -2071324847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_215
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e9b8ceddcb7971409683ad0b9400195
+      internalID: 232226078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_216
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 368
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b95ae27e59fcae4cb5149b639eefb4b
+      internalID: 176946929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_217
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ceba7c2d7ea2f4596e3968da516080
+      internalID: 832353697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_218
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc80a01003ca6b448a7f5130c3c52d09
+      internalID: -923878152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_219
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13faad3db3fa42248ba04f14e49a8378
+      internalID: 1807611248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_220
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275e4e4430b6d7b4baafd4a2be5f6db9
+      internalID: 1186992237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_221
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83551324ac8acb408fbd00aa80724b8
+      internalID: 1985962143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_222
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34d76a96b00c5847a57df00d42ffd9c
+      internalID: -1642658247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_223
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d58b3e0cd9cd5742ba46979f9814210
+      internalID: 1588915436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_224
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15117c9c5b64e9848a5bb2aa71356143
+      internalID: 1559222327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_225
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 298
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a237475216de347b94eb450ff02fd6
+      internalID: 839274817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_226
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afec9cddf473a440a9c44e4469e2912
+      internalID: -335736433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_227
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a830bb18389dd4f9d0d5b579ae6c69
+      internalID: 874656722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_228
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285dd3de86d076f4fa957c64cdb0a720
+      internalID: 1513433597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_229
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9004e8d5d4b4fb541967d06403308f34
+      internalID: 1541878661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_230
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9c7381c752aa845a5e09247ab076d2
+      internalID: 733187620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_231
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa90ce154e9e6f542b3473ff172f9da4
+      internalID: 824177021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_232
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29dcf2f74efb6b4297cbe5443d0d45f
+      internalID: 1459343418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_233
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489ae2fa0f587314282e39a7f63fb6b0
+      internalID: 2060903185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_234
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 228
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3f8f425962b444094177336ea725a5
+      internalID: -1127139590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_235
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a35902ade92b764894a80d49729b55e
+      internalID: 812908572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_236
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9c37f8925eae645bd98932ba2d9306
+      internalID: 597089353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_237
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e0e35cfc0219d4e8b7a0f60d7f5cff
+      internalID: -1090536711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_238
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884c0d9f9f5d1a44883e1f0c4e36c981
+      internalID: -1309837387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_239
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92159f0ae076dd43b02d6d343314cb8
+      internalID: 166377911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_240
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6cfbcc0f61cf346bf9cc767edf91b5
+      internalID: -5266906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_241
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cbc93241030a5479c853a0b84d4545
+      internalID: -1388766963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_242
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41b40d4cd152dc4f8e19768a3bc2464
+      internalID: 1781695695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_243
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d2dfbe268782b47980d2e0f2656cba
+      internalID: 1806290495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_244
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6feea5a23cd69428ca5b0310a2c73a
+      internalID: -1520307122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_245
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc239dc624bc504f965f84ce706d09f
+      internalID: -655823049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_246
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beaf40f735679f44f801e2975a17cef6
+      internalID: -1645212286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_247
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e1ace53c5cead4b9dde4bc29d9325d
+      internalID: -1890359545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_248
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2db452418d986b41a24687f9c088e2f
+      internalID: -1520719166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_249
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b630fab0d2bfb6f449faec0d29151580
+      internalID: -689921692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_250
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c513b645d6ef5459bc553e5787f582
+      internalID: -1295882496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_251
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755aec90653afa845a94a6e7e92263be
+      internalID: 1923027218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_252
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 88
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb75ef5b109f1f143b7eb32687130960
+      internalID: -315437655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_253
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09d2486bb6d55947afd2939eb49db13
+      internalID: 1013524377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_254
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b178636f07da054395e11e79bd142b1
+      internalID: 1687614099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_255
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceee078a9234e074da52b0ce12cf99b1
+      internalID: 2002753005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_256
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69a96e4b092a7f4089b0eae3f1b43de
+      internalID: 2033103899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_257
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058423810e1d8124c8c5576e4c2de8bb
+      internalID: -1904387512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_258
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de50d0673bb8c54a975d4f4a6a69ba1
+      internalID: 431550061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_259
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b547faa95d0943046bb5aedf2906ae26
+      internalID: -173263882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_260
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cc2a34932682541a4aa45365cac4e2
+      internalID: 110876623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medieval_spritesheet_261
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 18
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2332fc255657c4993ee470d70aebf6
+      internalID: 1025678973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      medieval_spritesheet_0: -22594441
+      medieval_spritesheet_1: 194686491
+      medieval_spritesheet_10: 991568529
+      medieval_spritesheet_100: 1217615442
+      medieval_spritesheet_101: -1984682325
+      medieval_spritesheet_102: 544090800
+      medieval_spritesheet_103: -626084333
+      medieval_spritesheet_104: 1026549024
+      medieval_spritesheet_105: -1514541618
+      medieval_spritesheet_106: 617247586
+      medieval_spritesheet_107: -2104363246
+      medieval_spritesheet_108: -2084011899
+      medieval_spritesheet_109: -1421478226
+      medieval_spritesheet_11: 386669197
+      medieval_spritesheet_110: -102541866
+      medieval_spritesheet_111: 1288155575
+      medieval_spritesheet_112: -103917881
+      medieval_spritesheet_113: 823325722
+      medieval_spritesheet_114: 1762803827
+      medieval_spritesheet_115: -1956015652
+      medieval_spritesheet_116: -108720508
+      medieval_spritesheet_117: -2079482355
+      medieval_spritesheet_118: 1338347415
+      medieval_spritesheet_119: -11706561
+      medieval_spritesheet_12: 460950182
+      medieval_spritesheet_120: -606660553
+      medieval_spritesheet_121: -362206708
+      medieval_spritesheet_122: 1965986966
+      medieval_spritesheet_123: 1397240080
+      medieval_spritesheet_124: 631206903
+      medieval_spritesheet_125: -14154547
+      medieval_spritesheet_126: 922228250
+      medieval_spritesheet_127: 882005679
+      medieval_spritesheet_128: -1891791584
+      medieval_spritesheet_129: 918454520
+      medieval_spritesheet_13: 639555790
+      medieval_spritesheet_130: 492193881
+      medieval_spritesheet_131: -1249049318
+      medieval_spritesheet_132: -460257845
+      medieval_spritesheet_133: -1524684768
+      medieval_spritesheet_134: -1852468354
+      medieval_spritesheet_135: 1029475121
+      medieval_spritesheet_136: 644576850
+      medieval_spritesheet_137: -936550956
+      medieval_spritesheet_138: 469541848
+      medieval_spritesheet_139: -642037337
+      medieval_spritesheet_14: 572677332
+      medieval_spritesheet_140: -1021326611
+      medieval_spritesheet_141: -574773816
+      medieval_spritesheet_142: 1623363878
+      medieval_spritesheet_143: -1069654699
+      medieval_spritesheet_144: -1346588754
+      medieval_spritesheet_145: -1197505109
+      medieval_spritesheet_146: 739525278
+      medieval_spritesheet_147: 706220206
+      medieval_spritesheet_148: -1019535332
+      medieval_spritesheet_149: -547120759
+      medieval_spritesheet_15: -136314324
+      medieval_spritesheet_150: 347674031
+      medieval_spritesheet_151: -1169252166
+      medieval_spritesheet_152: 1885431121
+      medieval_spritesheet_153: 1814744020
+      medieval_spritesheet_154: -132108158
+      medieval_spritesheet_155: 1372258148
+      medieval_spritesheet_156: -1833214667
+      medieval_spritesheet_157: -462170892
+      medieval_spritesheet_158: -75057006
+      medieval_spritesheet_159: 484617644
+      medieval_spritesheet_16: 1085173060
+      medieval_spritesheet_160: -598559950
+      medieval_spritesheet_161: 395939402
+      medieval_spritesheet_162: 546474542
+      medieval_spritesheet_163: -934052203
+      medieval_spritesheet_164: -119937849
+      medieval_spritesheet_165: -980624221
+      medieval_spritesheet_166: -1175468093
+      medieval_spritesheet_167: 703551842
+      medieval_spritesheet_168: -1184849573
+      medieval_spritesheet_169: 2048963506
+      medieval_spritesheet_17: -1703413698
+      medieval_spritesheet_170: -1088642778
+      medieval_spritesheet_171: 354494597
+      medieval_spritesheet_172: 1467895851
+      medieval_spritesheet_173: -1414004979
+      medieval_spritesheet_174: -1105551688
+      medieval_spritesheet_175: 1803316946
+      medieval_spritesheet_176: -678231049
+      medieval_spritesheet_177: 957916462
+      medieval_spritesheet_178: -1915043992
+      medieval_spritesheet_179: 1102078138
+      medieval_spritesheet_18: 808210901
+      medieval_spritesheet_180: -1962556193
+      medieval_spritesheet_181: -1789187987
+      medieval_spritesheet_182: -584408448
+      medieval_spritesheet_183: -401287640
+      medieval_spritesheet_184: -1447782995
+      medieval_spritesheet_185: -1147084674
+      medieval_spritesheet_186: 243124190
+      medieval_spritesheet_187: -1585725791
+      medieval_spritesheet_188: -1168711923
+      medieval_spritesheet_189: 780871452
+      medieval_spritesheet_19: -236135662
+      medieval_spritesheet_190: -1509160186
+      medieval_spritesheet_191: -375707344
+      medieval_spritesheet_192: 1701945141
+      medieval_spritesheet_193: 875207591
+      medieval_spritesheet_194: -1409875533
+      medieval_spritesheet_195: -266649255
+      medieval_spritesheet_196: -705410626
+      medieval_spritesheet_197: 1408712699
+      medieval_spritesheet_198: -992085617
+      medieval_spritesheet_199: -1893457564
+      medieval_spritesheet_2: -398823464
+      medieval_spritesheet_20: 1639459990
+      medieval_spritesheet_200: 1478820802
+      medieval_spritesheet_201: 1506882423
+      medieval_spritesheet_202: -1621504871
+      medieval_spritesheet_203: 2074883671
+      medieval_spritesheet_204: 1266700233
+      medieval_spritesheet_205: -576478041
+      medieval_spritesheet_206: 2118338105
+      medieval_spritesheet_207: 625492389
+      medieval_spritesheet_208: -738181386
+      medieval_spritesheet_209: 2133709916
+      medieval_spritesheet_21: -1166983854
+      medieval_spritesheet_210: 1679631481
+      medieval_spritesheet_211: 130909748
+      medieval_spritesheet_212: 176062767
+      medieval_spritesheet_213: -1032858674
+      medieval_spritesheet_214: -2071324847
+      medieval_spritesheet_215: 232226078
+      medieval_spritesheet_216: 176946929
+      medieval_spritesheet_217: 832353697
+      medieval_spritesheet_218: -923878152
+      medieval_spritesheet_219: 1807611248
+      medieval_spritesheet_22: 390978777
+      medieval_spritesheet_220: 1186992237
+      medieval_spritesheet_221: 1985962143
+      medieval_spritesheet_222: -1642658247
+      medieval_spritesheet_223: 1588915436
+      medieval_spritesheet_224: 1559222327
+      medieval_spritesheet_225: 839274817
+      medieval_spritesheet_226: -335736433
+      medieval_spritesheet_227: 874656722
+      medieval_spritesheet_228: 1513433597
+      medieval_spritesheet_229: 1541878661
+      medieval_spritesheet_23: -904599621
+      medieval_spritesheet_230: 733187620
+      medieval_spritesheet_231: 824177021
+      medieval_spritesheet_232: 1459343418
+      medieval_spritesheet_233: 2060903185
+      medieval_spritesheet_234: -1127139590
+      medieval_spritesheet_235: 812908572
+      medieval_spritesheet_236: 597089353
+      medieval_spritesheet_237: -1090536711
+      medieval_spritesheet_238: -1309837387
+      medieval_spritesheet_239: 166377911
+      medieval_spritesheet_24: 998163087
+      medieval_spritesheet_240: -5266906
+      medieval_spritesheet_241: -1388766963
+      medieval_spritesheet_242: 1781695695
+      medieval_spritesheet_243: 1806290495
+      medieval_spritesheet_244: -1520307122
+      medieval_spritesheet_245: -655823049
+      medieval_spritesheet_246: -1645212286
+      medieval_spritesheet_247: -1890359545
+      medieval_spritesheet_248: -1520719166
+      medieval_spritesheet_249: -689921692
+      medieval_spritesheet_25: 765469739
+      medieval_spritesheet_250: -1295882496
+      medieval_spritesheet_251: 1923027218
+      medieval_spritesheet_252: -315437655
+      medieval_spritesheet_253: 1013524377
+      medieval_spritesheet_254: 1687614099
+      medieval_spritesheet_255: 2002753005
+      medieval_spritesheet_256: 2033103899
+      medieval_spritesheet_257: -1904387512
+      medieval_spritesheet_258: 431550061
+      medieval_spritesheet_259: -173263882
+      medieval_spritesheet_26: -1457439384
+      medieval_spritesheet_260: 110876623
+      medieval_spritesheet_261: 1025678973
+      medieval_spritesheet_27: -1818996927
+      medieval_spritesheet_28: 581767545
+      medieval_spritesheet_29: 60435932
+      medieval_spritesheet_3: -1745542270
+      medieval_spritesheet_30: 1697446573
+      medieval_spritesheet_31: -1905601991
+      medieval_spritesheet_32: 994565824
+      medieval_spritesheet_33: 1147654688
+      medieval_spritesheet_34: 741373474
+      medieval_spritesheet_35: -1183957922
+      medieval_spritesheet_36: -1795362284
+      medieval_spritesheet_37: 1120724074
+      medieval_spritesheet_38: 1139514757
+      medieval_spritesheet_39: 698413394
+      medieval_spritesheet_4: 128612080
+      medieval_spritesheet_40: 993650164
+      medieval_spritesheet_41: -1362585760
+      medieval_spritesheet_42: -1477553516
+      medieval_spritesheet_43: -1953437054
+      medieval_spritesheet_44: -1799171254
+      medieval_spritesheet_45: -85070123
+      medieval_spritesheet_46: 318634142
+      medieval_spritesheet_47: 105017366
+      medieval_spritesheet_48: -2025967652
+      medieval_spritesheet_49: 897057150
+      medieval_spritesheet_5: 1574687269
+      medieval_spritesheet_50: -1042032552
+      medieval_spritesheet_51: -1670571805
+      medieval_spritesheet_52: 1968349480
+      medieval_spritesheet_53: -95675858
+      medieval_spritesheet_54: 659083335
+      medieval_spritesheet_55: 768511790
+      medieval_spritesheet_56: 426007483
+      medieval_spritesheet_57: 169994977
+      medieval_spritesheet_58: -1537882781
+      medieval_spritesheet_59: -1819297431
+      medieval_spritesheet_6: 744248939
+      medieval_spritesheet_60: -1863904212
+      medieval_spritesheet_61: -425923266
+      medieval_spritesheet_62: 846665018
+      medieval_spritesheet_63: -127849913
+      medieval_spritesheet_64: -1148018023
+      medieval_spritesheet_65: 654718698
+      medieval_spritesheet_66: -1779579339
+      medieval_spritesheet_67: 799103662
+      medieval_spritesheet_68: 40474172
+      medieval_spritesheet_69: 174440984
+      medieval_spritesheet_7: -163138495
+      medieval_spritesheet_70: -1029015362
+      medieval_spritesheet_71: 614206449
+      medieval_spritesheet_72: 1200460297
+      medieval_spritesheet_73: -707912594
+      medieval_spritesheet_74: 1268544655
+      medieval_spritesheet_75: 932042939
+      medieval_spritesheet_76: -840707492
+      medieval_spritesheet_77: 1555236162
+      medieval_spritesheet_78: 429619551
+      medieval_spritesheet_79: 2022412178
+      medieval_spritesheet_8: -863898564
+      medieval_spritesheet_80: -275405513
+      medieval_spritesheet_81: -96357304
+      medieval_spritesheet_82: -1926267574
+      medieval_spritesheet_83: -389127761
+      medieval_spritesheet_84: -2017782106
+      medieval_spritesheet_85: -1177413023
+      medieval_spritesheet_86: -1214116126
+      medieval_spritesheet_87: 852826767
+      medieval_spritesheet_88: -1011442215
+      medieval_spritesheet_89: -1587398949
+      medieval_spritesheet_9: -513555079
+      medieval_spritesheet_90: 1007488763
+      medieval_spritesheet_91: 1501426229
+      medieval_spritesheet_92: 1953954946
+      medieval_spritesheet_93: 1289192338
+      medieval_spritesheet_94: -849526414
+      medieval_spritesheet_95: 341407980
+      medieval_spritesheet_96: 954746014
+      medieval_spritesheet_97: -1129972820
+      medieval_spritesheet_98: -1721272786
+      medieval_spritesheet_99: -2091702023
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
