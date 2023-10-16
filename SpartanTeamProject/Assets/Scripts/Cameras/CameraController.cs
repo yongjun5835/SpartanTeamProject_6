@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,75 +10,29 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
 
-    [Header("Settings")]
-    [SerializeField] private CameraModes cameraModes;
-    [SerializeField, Range(0f, 0.5f)] private float smoothTime;
+    [SerializeField] private CinemachineVirtualCamera virtualCamera;
+    [SerializeField] private CinemachineConfiner confiner;
 
-    [Header("Map")]
-    [SerializeField] private SpriteRenderer map;
-
-    [Header("Inspector (dont need to connect)")]
-    [SerializeField] private Transform curTarget;
-
-    private Bounds cameraBounds;
-    public Camera camera;
-    private Vector3 refVector = Vector3.zero;
-
+    [SerializeField] private TextMeshProUGUI bulletDistance;
+    public Camera mainCamera;
     private void Awake()
     {
-        camera = GetComponent<Camera>();
-    }
-    void Start()
-    {
-        //gameManager = GameManager.Instance;
-        ChangeMap();
+        virtualCamera = GetComponent<CinemachineVirtualCamera>();
+        confiner = GetComponent<CinemachineConfiner>();
+        mainCamera = Camera.main;
     }
 
-
-    private void Update()
+    public void ChangeBounds(Collider2D collider)
     {
-        ChaseTarget();
-    }
-
-    private void LateUpdate()
-    {
-        CheckBounds();
-    }
-
-    public void ChangeMap()
-    {
-        if (map != null)
+        if (collider != null)
         {
-            cameraBounds = map.bounds;
+            confiner.m_BoundingShape2D = collider;
         }
-    }
-    public void CheckBounds()
-    {
-        if (cameraBounds == null) return;
-
-        Vector3 curPosition = camera.transform.position;
-        float halfOrthoSize = camera.orthographicSize;
-        float aspectRatio = camera.aspect;
-
-        curPosition.x = Mathf.Clamp(curPosition.x, cameraBounds.min.x + halfOrthoSize * aspectRatio, cameraBounds.max.x - halfOrthoSize * aspectRatio);
-        curPosition.y = Mathf.Clamp(curPosition.y, cameraBounds.min.y + halfOrthoSize, cameraBounds.max.y - halfOrthoSize);
-
-        camera.transform.position = curPosition;
     }
 
     public void SetTarget(Transform target)
     {
-        if( target == null) return;
-        curTarget = target;
-    }
-
-    public void ChaseTarget()
-    {
-        if (curTarget == null) return;
-
-        Vector3 target = curTarget.position;
-        target.z = -10f;
-
-        transform.position = target;
+        if (target == null) return;
+        virtualCamera.m_Follow = target;
     }
 }
