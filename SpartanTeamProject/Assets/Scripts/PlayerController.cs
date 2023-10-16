@@ -97,4 +97,12 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSecondsRealtime(2);
         testBtn.GetComponent<Button>().interactable = true;
     }
+
+    public void Refresh()
+    {
+        powerBar.gameObject.SetActive(false);
+        currentPower = 0;
+        Crosshair.gameObject.SetActive(false);
+        testBtn.GetComponent<Button>().interactable = true;
+    }
 }
