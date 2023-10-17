@@ -15,7 +15,7 @@ public class ProjectileManager : MonoBehaviour
     [Header("# Weapon Btn")]
     public Button[] weapons;
 
-    private GameObject slectedProjectile;
+    private GameObject selectedProjectile;
 
     private void Awake()
     {
@@ -27,12 +27,12 @@ public class ProjectileManager : MonoBehaviour
         else if (instance != this)
             Destroy(this.gameObject);
 
-        slectedProjectile = projectiles[0];
+        selectedProjectile = projectiles[0];
     }
 
     public void Shoot()
     {
-        GameObject projectile = Instantiate(slectedProjectile, projectileSpawnPoint.position, Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward));
+        GameObject projectile = Instantiate(selectedProjectile, projectileSpawnPoint.position, Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward));
         Vector3 dir = Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward) * Vector3.right;
         float shootPower = playerController.currentPower / 5;
         projectile.GetComponent<Rigidbody2D>().AddForce(dir * shootPower, ForceMode2D.Impulse);
@@ -42,9 +42,11 @@ public class ProjectileManager : MonoBehaviour
     public void selectBtn(int i)
     {
         if (weapons[i].tag == "Weapon_Default")
-            slectedProjectile = projectiles[0];
+            selectedProjectile = projectiles[0];
         else
-            slectedProjectile = projectiles[int.Parse(weapons[i].tag[13].ToString())];
+            selectedProjectile = projectiles[int.Parse(weapons[i].tag[13].ToString())];
+
+        Debug.Log(selectedProjectile);
     }
 
     public void selectBtn1()
