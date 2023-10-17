@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] Enemys;
 
     [SerializeField] private GameObject Player;
+    public CameraController cameraController;
     public int TurnCount;
     public Text timer;
     float time;
