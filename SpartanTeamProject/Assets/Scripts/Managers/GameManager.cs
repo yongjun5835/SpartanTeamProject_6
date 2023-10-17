@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         TurnCheck();
         time = float.Parse(timer.text);
         time -= Time.deltaTime;
-        timer.text = time.ToString("N1");
+        timer.text = time.ToString("N2");
         if (!IsCourutineRunning)
         {
             StartCoroutine(Turn());
