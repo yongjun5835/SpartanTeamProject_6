@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private bool isSetDir = false;
     private bool isSetPower = false;
     private bool isShoot = false;
+    private bool freezeMove = false;
 
     private Vector3 startPos;
 
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log($"마우스 클릭 {isSetDir} {Time.frameCount.ToString()}");
             isSetPower = true;
             isSetDir = false;
+            freezeMove = true;
             testBtn.GetComponent<Button>().interactable = false;
         }
 
@@ -76,7 +78,8 @@ public class PlayerController : MonoBehaviour
             ProjectileManager.instance.Shoot();
         }
 
-        Move();
+        if (!freezeMove)
+            Move();
     }
 
     public void SettingDir()
@@ -110,6 +113,7 @@ public class PlayerController : MonoBehaviour
         currentPower = 0;
         Crosshair.gameObject.SetActive(false);
         testBtn.GetComponent<Button>().interactable = true;
+        freezeMove = false;
     }
 
     public void Move()
