@@ -13777,6 +13777,7 @@ RectTransform:
   - {fileID: 605119217}
   - {fileID: 1540202876}
   - {fileID: 893910868}
+  - {fileID: 1856290716}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13889,6 +13890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 295999514}
+  cameraController: {fileID: 0}
+  timer: {fileID: 0}
 --- !u!4 &1132054935
 Transform:
   m_ObjectHideFlags: 0
@@ -14045,7 +14048,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 295999517}
   projectileSpawnPoint: {fileID: 1432258651}
-  defaultProjectile: {fileID: 8572482298909959174, guid: c1e67e64d5659bc4ea5eb6f5ab642184, type: 3}
+  projectiles: []
+  weapons: []
 --- !u!4 &1236187206
 Transform:
   m_ObjectHideFlags: 0
@@ -16474,6 +16478,96 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1856290715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856290716}
+  - component: {fileID: 1856290718}
+  - component: {fileID: 1856290717}
+  - component: {fileID: 1856290719}
+  m_Layer: 5
+  m_Name: OutOfCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1856290716
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856290715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1049456189}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 500}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1856290717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856290715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1856290718
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856290715}
+  m_CullTransparentMesh: 1
+--- !u!114 &1856290719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856290715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10b241cb5b8f854ca62d4f03cddf9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_distance: {fileID: 0}
 --- !u!1 &1865278355
 GameObject:
   m_ObjectHideFlags: 0
@@ -17837,6 +17931,7 @@ GameObject:
   - component: {fileID: 2054321614}
   - component: {fileID: 2054321613}
   - component: {fileID: 2054321612}
+  - component: {fileID: 2054321615}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -17916,6 +18011,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2054321615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054321611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30f2cf35f8927a4486a2b722c77f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  virtualCamera: {fileID: 0}
+  confiner: {fileID: 0}
+  curTarget: {fileID: 0}
+  ui_OutOfCamera: {fileID: 0}
+  mainCamera: {fileID: 0}
 --- !u!114 &2113383743 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3926557023541933073, guid: 61deb7a7001afaa4e9c9376149f4212f, type: 3}

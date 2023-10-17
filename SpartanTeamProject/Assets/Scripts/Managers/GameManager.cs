@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
 
     public void GameClear()
     {
-        // UIÀÇ ´ÙÀ½ ·¹º§, ¸ÞÀÎ¸Þ´º·Î È­¸é ºÒ·¯¿À±â
+        // UIï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Î¸Þ´ï¿½ï¿½ï¿½ È­ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
     }
 
     public void ReloadScene()
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
     }
     public bool TurnCheck()
     {
-        // °á°ú°¡ TrueÀÏ ¶§ PlayerÅÏ, FalseÀÏ ¶§ EnemyÅÏ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ Trueï¿½ï¿½ ï¿½ï¿½ Playerï¿½ï¿½, Falseï¿½ï¿½ ï¿½ï¿½ Enemyï¿½ï¿½
         if (TurnCount / Enemys.Length == 1)
         {
             result = true;
