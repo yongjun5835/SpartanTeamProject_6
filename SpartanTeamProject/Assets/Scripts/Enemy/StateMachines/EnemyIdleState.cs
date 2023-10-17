@@ -1,6 +1,6 @@
 
-public class EnemyIdleState : EnemyBaseState
-{
+public class EnemyIdleState : EnemyGroundState
+{    
     public EnemyIdleState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
     {
     }
@@ -21,6 +21,5 @@ public class EnemyIdleState : EnemyBaseState
     public override void Update()
     {
         base.Update();
-    }
-
+    }  
 }

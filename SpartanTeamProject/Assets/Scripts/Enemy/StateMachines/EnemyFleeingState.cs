@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class EnemyFleeingState : MonoBehaviour
+public class EnemyFleeingState : EnemyGroundState
 {
+    public EnemyFleeingState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {

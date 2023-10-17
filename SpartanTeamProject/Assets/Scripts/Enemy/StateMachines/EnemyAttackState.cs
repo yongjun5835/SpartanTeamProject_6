@@ -1,7 +1,10 @@
-using UnityEngine;
 
-public class EnemyAttackState : MonoBehaviour
+public class EnemyAttackState : EnemyGroundState
 {
+    public EnemyAttackState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
+    {
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -5,6 +5,12 @@ public class EnemyBaseState : IState
     protected EnemyStateMachine stateMachine;
     protected readonly EnemySO data;
 
+    protected enum TargetPos
+    {
+        NotInRange, ChaseRange, AttackRange, FleeRange
+    }
+    protected TargetPos targetPos;
+
     public EnemyBaseState(EnemyStateMachine enemyStateMachine)
     {
         stateMachine = enemyStateMachine;
@@ -13,7 +19,7 @@ public class EnemyBaseState : IState
 
     public virtual void Enter()
     {
-       
+
     }
 
     public virtual void Exit()
@@ -21,9 +27,30 @@ public class EnemyBaseState : IState
        
     }
     public virtual void Update()
-    {
-        Move();
-    }
+    {       
+        // TODO
+        // 내 턴이면서
+        // 플레이어가 감지되지 않을 때 - OnProwl
+        // 플레이어가 attack range - attack
+        // 플레이어가 chasing range - chasing
+        // 플레이어가 fleeing range - fleeing
+
+        switch (TargetPosInRange())
+        {
+            case TargetPos.NotInRange:
+                OnProwl();
+                break;
+            case TargetPos.ChaseRange:
+                OnChasing();
+                break;
+            case TargetPos.AttackRange:
+                OnAttack();
+                break;
+            case TargetPos.FleeRange:
+                OnFleeing();
+                break;
+        }
+    }   
 
     public virtual void PhysicsUpdate()
     {
@@ -38,46 +65,75 @@ public class EnemyBaseState : IState
     protected void StopAnimation(int animationHash)
     {
         stateMachine.Enemy.Animator.SetBool(animationHash, false);
+    }  
+    
+    protected virtual void Move()
+    {
+        
     }
 
-    private void Move()
-    {
-        Vector3 movementDirection = GetMovementDirection();
-
-        Rotate(movementDirection);
-
-        Move(movementDirection);
-
-    }      
-
-    protected void ForceMove()
-    {
-        stateMachine.Enemy.Controller.Move(stateMachine.Enemy.ForceReceiver.Movement * Time.deltaTime);
-    }
-
-    private Vector3 GetMovementDirection()
-    {
-        // TODO
+    protected virtual Vector3 GetMovementDirection()
+    {        
         return Vector3.zero;
     }
 
-    private void Move(Vector3 direction)
+    protected virtual void Move(Vector3 direction)
     {
-        float movementSpeed = GetMovementSpeed();
-
-        stateMachine.Enemy.Controller.Move(
-            ((direction * movementSpeed) + stateMachine.Enemy.ForceReceiver.Movement) * Time.deltaTime);
+        
     }
 
-    private void Rotate(Vector3 movementDirection)
-    {
-        // TODO
-    }
-
-    private float GetMovementSpeed()
+    protected virtual float GetMovementSpeed()
     {
         float movementSpeed = stateMachine.MovementSpeed * stateMachine.MovementSpeedModifier;
 
         return movementSpeed;
+    }
+    protected TargetPos TargetPosInRange()
+    {
+        Vector3 playerPos = stateMachine.Target.transform.position;
+        Vector3 enemyPos = stateMachine.Enemy.transform.position;
+        TargetPos targetPos;
+
+        float playerDistanceSqr = (playerPos - enemyPos).sqrMagnitude;
+
+        if (playerDistanceSqr <= stateMachine.Enemy.Data.ChasingRange * stateMachine.Enemy.Data.ChasingRange)
+        {
+            targetPos = TargetPos.ChaseRange;
+
+            if (playerDistanceSqr <= stateMachine.Enemy.Data.AttackRange * stateMachine.Enemy.Data.AttackRange)
+            {
+                targetPos = TargetPos.AttackRange;
+
+                if (playerDistanceSqr <= stateMachine.Enemy.Data.FleeingRange * stateMachine.Enemy.Data.FleeingRange)
+                {
+                    targetPos = TargetPos.FleeRange;
+                }
+            }
+        }
+        else
+        {
+            targetPos = TargetPos.NotInRange;
+        }
+
+        return targetPos;
+    }
+    protected void OnProwl()
+    {
+        stateMachine.ChangeState(stateMachine.ProwlState);
+    }
+
+    protected void OnChasing()
+    {
+        stateMachine.ChangeState(stateMachine.ChasingState);
+    }
+
+    protected void OnAttack()
+    {
+        stateMachine.ChangeState(stateMachine.AttackState);
+    }
+
+    protected void OnFleeing()
+    {
+        stateMachine.ChangeState(stateMachine.FleeingState);
     }
 }

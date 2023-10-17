@@ -7,28 +7,15 @@ public class ForceReceiver : MonoBehaviour
 
     private Vector3 dampingVelocity;
     private Vector3 impact;
-    private float verticalVelocity;
-
-    public Vector3 Movement => impact + Vector3.up * verticalVelocity;
 
     void Update()
-    {
-        if (verticalVelocity < 0f && controller.isGrounded)
-        {
-            verticalVelocity = Physics.gravity.y * Time.deltaTime;
-        }
-        else
-        {
-            verticalVelocity += Physics.gravity.y * Time.deltaTime;
-        }
-
+    {      
         impact = Vector3.SmoothDamp(impact, Vector3.zero, ref dampingVelocity,drag);
     }
 
     private void Reset()
     {
         impact = Vector3.zero;
-        verticalVelocity = 0f;
     }
 
     public void AddForce(Vector3 force)
