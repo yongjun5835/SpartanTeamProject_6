@@ -15,10 +15,15 @@ public class GameManager : MonoBehaviour
             return instance == null ? null : instance;
         }
     }
+    [SerializeField] private GameObject[] Enemys;
 
-    public GameObject Player;
+    [SerializeField] private GameObject Player;
+    public int TurnCount;
     public Text timer;
     float time;
+    bool result = false;
+    bool IsCourutineRunning = false;
+
     private void Awake()
     {
         if(instance == null)
@@ -30,15 +35,27 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    private void Start()
+    {
+        Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+    }
     private void Update()
     {
+        TurnCheck();
         time = float.Parse(timer.text);
         time -= Time.deltaTime;
         timer.text = time.ToString("N2");
-        //if() // 또는 플레이어 체력이 0이하이면 실행
-        //{
-        //    GameOver();
-        //}
+        if (!IsCourutineRunning)
+        {
+            StartCoroutine(Turn());
+        }
+        if(time < 0)
+        {
+            timer.text = "10";
+            time = 10f;
+            TurnCount++;
+        }
     }
     public void GameOver()
     {
@@ -55,5 +72,57 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("IntroScene");
+    }
+    public bool TurnCheck()
+    {
+        // 결과가 True일 때 Player턴, False일 때 Enemy턴
+        if (TurnCount / Enemys.Length == 1)
+        {
+            result = true;
+        }
+        else
+        {
+            result = false;
+        }
+        if (TurnCount > Enemys.Length)
+        {
+            TurnCount = 0;
+        }
+        return result;
+    }
+    public void TurnStart()
+    {
+        if (result)
+        {
+            Player.gameObject.GetComponent<PlayerController>().enabled = true;
+        }
+        else
+        {
+            Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = true;
+        }
+    }
+    public void TurnEnd()
+    {
+        if (result)
+        {
+            Player.gameObject.GetComponent<PlayerController>().enabled = false;
+        }
+        else
+        {
+            Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = false;
+        }
+    }
+
+    IEnumerator Turn()
+    {
+        while (true)
+        {
+            IsCourutineRunning = true;
+            TurnStart();
+
+            yield return new WaitForSecondsRealtime(10f);
+            TurnEnd();
+            IsCourutineRunning = false;
+        }
     }
 }

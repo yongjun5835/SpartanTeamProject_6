@@ -6,6 +6,6 @@ public class EnemyTest : MonoBehaviour
 {
     private void OnEnable()
     {
-        Debug.Log("EnemyTurn");
+        Debug.Log("EnemyTurn"+GameManager.Instance.TurnCount);
     }
 }
