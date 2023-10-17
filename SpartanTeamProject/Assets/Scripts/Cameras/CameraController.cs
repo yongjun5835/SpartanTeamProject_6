@@ -12,8 +12,10 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private CinemachineVirtualCamera virtualCamera;
     [SerializeField] private CinemachineConfiner confiner;
+    [SerializeField] private Transform curTarget;
 
-    [SerializeField] private TextMeshProUGUI bulletDistance;
+    [SerializeField] private UI_OutOfCamera ui_OutOfCamera;
+    private bool isTargetOutOfCamera;
     public Camera mainCamera;
     private void Awake()
     {
@@ -22,6 +24,18 @@ public class CameraController : MonoBehaviour
         mainCamera = Camera.main;
     }
 
+    private void Start()
+    {
+        GameManager.Instance.cameraController = this;
+    }
+
+    private void Update()
+    {
+        if (isTargetOutOfCamera)
+        {
+            //ui_OutOfCamera.SetTarget(curTarget);
+        }
+    }
     public void ChangeBounds(Collider2D collider)
     {
         if (collider != null)
