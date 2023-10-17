@@ -1,16 +1,13 @@
 using UnityEngine;
 
-public class EnemyChasingState : MonoBehaviour
+public class EnemyChasingState : EnemyGroundState
 {
-    // Start is called before the first frame update
-    void Start()
+    public EnemyChasingState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override Vector3 GetMovementDirection()
     {
-        
+        return (stateMachine.Target.transform.position - stateMachine.Enemy.transform.position).normalized;
     }
 }
