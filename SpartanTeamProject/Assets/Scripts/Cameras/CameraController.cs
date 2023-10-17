@@ -85,7 +85,8 @@ public class CameraController : MonoBehaviour
         if (isFreeCameraMode && !(Cursor.lockState == CursorLockMode.Locked))
         {
             Cursor.lockState = CursorLockMode.Locked;
-            freeCameraTarget.position = virtualCamera.transform.position;
+            Vector2 position = Camera.main.transform.position;
+            freeCameraTarget.position = position;
             virtualCamera.m_Follow = freeCameraTarget;
         }
         if (!isFreeCameraMode && Cursor.lockState == CursorLockMode.Locked)
