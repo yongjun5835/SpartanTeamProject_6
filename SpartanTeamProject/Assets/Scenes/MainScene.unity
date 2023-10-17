@@ -483,8 +483,9 @@ RectTransform:
   - {fileID: 887823040}
   - {fileID: 333211402}
   - {fileID: 1693490937}
+  - {fileID: 1358997804}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7539,6 +7540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2111328136}
+  timer: {fileID: 1358997805}
 --- !u!4 &1182444913
 Transform:
   m_ObjectHideFlags: 0
@@ -9431,6 +9433,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1358997803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358997804}
+  - component: {fileID: 1358997806}
+  - component: {fileID: 1358997805}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1358997804
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358997803}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 388351464}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -185, y: -130}
+  m_SizeDelta: {x: 300, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1358997805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358997803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2f2d5f8bc2ec65948b409a3b9a641134, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 30
+--- !u!222 &1358997806
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358997803}
+  m_CullTransparentMesh: 1
 --- !u!1 &1396234534
 GameObject:
   m_ObjectHideFlags: 0
@@ -15846,7 +15928,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 2111328137}
   projectileSpawnPoint: {fileID: 1698645319}
-  defaultProjectile: {fileID: 8572482298909959174, guid: c1e67e64d5659bc4ea5eb6f5ab642184, type: 3}
+  projectiles: []
+  weapons: []
 --- !u!4 &1478395751
 Transform:
   m_ObjectHideFlags: 0
@@ -16419,7 +16502,7 @@ Transform:
   - {fileID: 1929476437}
   - {fileID: 329423337}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1854250752
 GameObject:
@@ -16468,7 +16551,7 @@ Transform:
   - {fileID: 804273805}
   - {fileID: 1720304179}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1883791675
 GameObject:
@@ -17906,11 +17989,6 @@ MonoBehaviour:
   powerBar: {fileID: 953197157}
   maxPower: 100
   currentPower: 0
-  weaponBtn1: {fileID: 1033800477}
-  weaponBtn2: {fileID: 1782817603}
-  weaponBtn3: {fileID: 1305610655}
-  weaponBtn4: {fileID: 1020048425}
-  weaponBtn5: {fileID: 1983133653}
   v2: {x: 0, y: 0}
   aimAngle: 0
 --- !u!114 &2111328138
