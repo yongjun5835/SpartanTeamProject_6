@@ -9656,6 +9656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1027632166}
+  timer: {fileID: 1162432564}
 --- !u!4 &573814835
 Transform:
   m_ObjectHideFlags: 0
@@ -12486,7 +12487,7 @@ GameObject:
   - component: {fileID: 1162432565}
   - component: {fileID: 1162432564}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12509,7 +12510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -185, y: -141}
+  m_AnchoredPosition: {x: -185, y: -130}
   m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1162432564
