@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject Player;
+    public CameraController cameraController;
     public Text timer;
     float time;
     private void Awake()
