@@ -668,6 +668,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &657682012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657682013}
+  m_Layer: 0
+  m_Name: FreeCameraTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &657682013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657682012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30.38, y: -4.19, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &676521823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6525974654222690231, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
@@ -6982,7 +7013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023554096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.787516, y: -1.8043871, z: -10}
+  m_LocalPosition: {x: 28.822601, y: -1.8046334, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7579,6 +7610,7 @@ GameObject:
   - component: {fileID: 1136749900}
   - component: {fileID: 1136749899}
   - component: {fileID: 1136749901}
+  - component: {fileID: 1136749902}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -7658,6 +7690,30 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 1720304180}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+--- !u!114 &1136749902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136749898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30f2cf35f8927a4486a2b722c77f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  virtualCamera: {fileID: 0}
+  confiner: {fileID: 0}
+  curTarget: {fileID: 0}
+  player: {fileID: 2111328134}
+  freeCameraTarget: {fileID: 657682013}
+  ui_OutOfCamera: {fileID: 0}
+  scrollSpeed: 30
+  maxSize: 10
+  minSize: 5
+  moveSpeed: 10
+  mainCamera: {fileID: 0}
 --- !u!1 &1182444911
 GameObject:
   m_ObjectHideFlags: 0
@@ -7688,6 +7744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2111328136}
+  cameraController: {fileID: 0}
   timer: {fileID: 1358997805}
 --- !u!4 &1182444913
 Transform:
@@ -16612,11 +16669,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 23.387388}
-      - {x: -37.71962, y: 23.31975}
+    - - {x: -1.0622466, y: 18.57187}
+      - {x: -37.71962, y: 18.575047}
       - {x: -37.688084, y: -6.796723}
       - {x: 37.67629, y: -6.821062}
-      - {x: 37.88845, y: 23.411991}
+      - {x: 37.676003, y: 18.384027}
   m_UseDelaunayMesh: 0
 --- !u!114 &1782817603 stripped
 MonoBehaviour:
