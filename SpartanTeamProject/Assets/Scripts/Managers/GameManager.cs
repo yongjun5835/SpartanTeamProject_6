@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject Player;
     public Text timer;
-
+    float time;
     private void Awake()
     {
         if(instance == null)
@@ -32,9 +32,13 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        float time = float.Parse(timer.text);
+        time = float.Parse(timer.text);
         time -= Time.deltaTime;
         timer.text = time.ToString("N2");
+        //if() // 또는 플레이어 체력이 0이하이면 실행
+        //{
+        //    GameOver();
+        //}
     }
     public void GameOver()
     {
@@ -44,7 +48,6 @@ public class GameManager : MonoBehaviour
 
     public void GameClear()
     {
-        // 플레이어의 체력이 0이하로 내려가면 실행
         // UI의 다음 레벨, 메인메뉴로 화면 불러오기
     }
 

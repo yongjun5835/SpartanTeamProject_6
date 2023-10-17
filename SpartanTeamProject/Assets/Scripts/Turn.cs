@@ -46,22 +46,29 @@ public class Turn : MonoBehaviour
         {
             // Enemy 동작가능
             Enemys[TurnCount-1].gameObject.GetComponent<EnemyTest>().enabled = true;
-            //for(int i = 0; i<Enemys.Length; i++)
-            //{
-            //    enemys[i].gameobject.getcomponent<enemytest>().enabled = true;
-            // GetComponent<적 동작 스크립트> << 삽입
-            //}
         }
     }
-    public void TurnEnd(GameObject obj)
+    public void TurnEnd()
     {
         //게임오브젝트를 받아서 동작 스크립트 enabled = false로 변경
-
+        if (result)
+        {
+            GameManager.Instance.Player.gameObject.GetComponent<PlayerController>().enabled = false;
+        }
+        else
+        {
+            Enemys[TurnCount - 1].gameObject.GetComponent<EnemyTest>().enabled = false;
+        }
     }
 
     public void TurnChange()
     {
         CheckTurn();
         TurnStart();
+    }
+
+    IEnumerator TimeCheck()
+    {
+        yield return new WaitForSeconds(float.Parse(GameManager.Instance.timer.text));
     }
 }
