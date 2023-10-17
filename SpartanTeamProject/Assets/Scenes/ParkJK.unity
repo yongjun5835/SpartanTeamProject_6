@@ -9657,6 +9657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemys: []
   Player: {fileID: 1027632166}
+  cameraController: {fileID: 0}
   TurnCount: 0
   timer: {fileID: 1162432564}
 --- !u!4 &573814835
