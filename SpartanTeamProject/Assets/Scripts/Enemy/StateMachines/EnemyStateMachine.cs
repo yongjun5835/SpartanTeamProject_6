@@ -7,8 +7,10 @@ public class EnemyStateMachine : StateMachine
     public Transform Target { get; private set; }
 
     public EnemyIdleState IdleState { get; }
+    public EnemyProwlState ProwlState { get; }
     public EnemyChasingState ChasingState { get; }
     public EnemyAttackState AttackState { get; }
+    public EnemyFleeingState FleeingState { get; }
 
     public float MovementSpeed { get; private set; }
     public float MovementSpeedModifier { get; set; } = 1f;
@@ -18,9 +20,10 @@ public class EnemyStateMachine : StateMachine
         this.Enemy = enemy;
         Target = GameObject.FindGameObjectWithTag("Player").transform;
 
-        //idlestate = new enemyidlestate(this);
-        //chasingstate = new enemychasingstate(this);
-        //attackstate = new enemyattackstate(this);
+        IdleState = new EnemyIdleState(this);
+        ProwlState = new EnemyProwlState(this);
+        // ChasingState = new EnemyChasingState(this);
+        // attackstate = new enemyattackstate(this);
 
         MovementSpeed = enemy.Data.BaseSpeed;
     }

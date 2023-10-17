@@ -53,8 +53,8 @@ public class GameManager : MonoBehaviour
         }
         if(time < 0)
         {
-            timer.text = "10";
             time = 10f;
+            timer.text = time.ToString() ;
             TurnCount++;
         }
     }
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
 
     public void GameClear()
     {
-        // UI�� ���� ����, ���θ޴��� ȭ�� �ҷ�����
+
     }
 
     public void ReloadScene()
@@ -76,7 +76,6 @@ public class GameManager : MonoBehaviour
     }
     public bool TurnCheck()
     {
-        // ����� True�� �� Player��, False�� �� Enemy��
         if (TurnCount / Enemys.Length == 1)
         {
             result = true;
@@ -121,7 +120,7 @@ public class GameManager : MonoBehaviour
             IsCourutineRunning = true;
             TurnStart();
 
-            yield return new WaitForSecondsRealtime(10f);
+            yield return new WaitForSecondsRealtime(time);
             TurnEnd();
             IsCourutineRunning = false;
         }
