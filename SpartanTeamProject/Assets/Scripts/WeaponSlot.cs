@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class WeaponSlot : MonoBehaviour
 {
-    Image ItemImg;
+    public Image ItemImg;
     private void Awake()
     {
         ItemImg = gameObject.GetComponent<Image>();
