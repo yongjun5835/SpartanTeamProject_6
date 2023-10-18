@@ -67,29 +67,29 @@ public class WeaponSelect : MonoBehaviour
 
     public void UpdateWeaponSlots()
     {
-        // 현재 슬롯 수
+       
         int currentSlotCount = weaponSlotPanel.childCount;
 
-        // 선택한 무기 슬롯을 비우기
+        
         foreach (Transform slot in weaponSlotPanel)
         {
             Destroy(slot.gameObject);
         }
 
-        // 최대 슬롯 수 (5개)
+        
         int maxSlotCount = 5;
 
-        // 실제 슬롯 생성 (최대 슬롯 개수까지만)
+        
         for (int i = 0; i < Mathf.Min(maxSlotCount, selectedWeapons.Count); i++)
         {
             GameObject selectedWeapon = selectedWeapons[i];
-            GameObject slot = new GameObject("WeaponSlot"); // 슬롯 게임 오브젝트 생성
-            slot.transform.SetParent(weaponSlotPanel); // 슬롯을 새로운 패널에 부모로 설정
+            GameObject slot = new GameObject("WeaponSlot"); 
+            slot.transform.SetParent(weaponSlotPanel); 
 
-            // 이미지 컴포넌트 가져오기
+           
             Image selectedWeaponImage = selectedWeapon.GetComponent<Image>();
 
-            // 슬롯 이미지 생성 및 설정
+           
             Image slotImage = slot.AddComponent <Image>();
             slotImage.sprite = selectedWeaponImage.sprite; // 부모 게임 오브젝트의 이미지를 슬롯 이미지로 설정
 
@@ -106,7 +106,7 @@ public class WeaponSelect : MonoBehaviour
 
             // 슬롯에 버튼 컴포넌트 추가
             Button slotButton = slot.AddComponent<Button>();
-            // 슬롯 버튼에 각기 다른 클릭 이벤트 핸들러 추가
+           
             int slotIndex = i; // 슬롯의 인덱스 저장
             slotButton.onClick.AddListener(() => SlotClicked(slotIndex));
         }
