@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 
 
-public enum CameraModes { Computer, Mobile }
+public enum CameraModes { OnAndOff, Toggle }
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
@@ -19,6 +19,7 @@ public class CameraController : MonoBehaviour
     // ÀÛ¾÷Áß
     // [SerializeField] private UI_OutOfCamera ui_OutOfCamera;
     [Header("Settings")]
+    [SerializeField] private CameraModes mode;
     public float zoomMaxSize = 10.0f;
     public float zoomMinSize = 5.0f;
     public float freeCameraMoveSpeed = 10.0f;
@@ -51,7 +52,13 @@ public class CameraController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            ToggleCameraMode();
+            if( mode == CameraModes.OnAndOff) { OnFreeCameraMode(); }
+
+            if (mode == CameraModes.Toggle) { ToggleCameraMode(); }
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            if( mode == CameraModes.OnAndOff ) { OffFreeCameraMode(); }
         }
         if (isFreeCameraMode)
         {
@@ -85,6 +92,26 @@ public class CameraController : MonoBehaviour
             virtualCamera.transform.position = Camera.main.transform.position;
         }
         if (!isFreeCameraMode && Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            virtualCamera.m_Follow = curTarget;
+        }
+    }
+
+    public void OnFreeCameraMode()
+    {
+        isFreeCameraMode = true;
+        if (Cursor.lockState != CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            virtualCamera.m_Follow = null;
+            virtualCamera.transform.position = Camera.main.transform.position;
+        }
+    }
+    public void OffFreeCameraMode()
+    {
+        isFreeCameraMode = false;
+        if (Cursor.lockState == CursorLockMode.Locked)
         {
             Cursor.lockState = CursorLockMode.None;
             virtualCamera.m_Follow = curTarget;
