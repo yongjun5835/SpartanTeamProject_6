@@ -12,10 +12,10 @@ public class ProjectileManager : MonoBehaviour
     [Header("# Projectiles")]
     [SerializeField]
     private GameObject[] projectiles;
-    [Header("# Weapon Btn")]
-    public Button[] weapons;
 
     private GameObject selectedProjectile;
+    [Header("# Weapon Btn")]
+    public List<GameObject> slots = new List<GameObject>();
 
     private void Awake()
     {
@@ -42,10 +42,10 @@ public class ProjectileManager : MonoBehaviour
 
     public void selectBtn(int i)
     {
-        if (weapons[i].tag == "Weapon_Default")
+        if (slots[i].tag == "Weapon_Default")
             selectedProjectile = projectiles[0];
         else
-            selectedProjectile = projectiles[int.Parse(weapons[i].tag[13].ToString())];
+            selectedProjectile = projectiles[int.Parse(slots[i].tag[13].ToString())];
 
         Debug.Log(selectedProjectile);
     }
@@ -77,7 +77,7 @@ public class ProjectileManager : MonoBehaviour
 
     public void EnemyShoot( int i, float shootPower, Vector3 shootTip)
     {
-        Debug.Log("¿©±â È£ÃâµÅ?6");
+        Debug.Log("ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½?6");
         GameObject projectile = Instantiate(projectiles[0], shootTip, Quaternion.AngleAxis(40f, Vector3.forward));
         GameManager.Instance.cameraController.SetTarget(projectile.transform);
         Vector3 dir = Quaternion.AngleAxis(40f, Vector3.forward) * Vector3.right;

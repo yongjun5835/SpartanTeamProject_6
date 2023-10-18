@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    private static DataManager instance = null;
+    private static DataManager instance = null; 
     public static DataManager Instance
     {
         get
@@ -24,4 +24,10 @@ public class DataManager : MonoBehaviour
         }
     }
     public WeaponSO[] Weapon;
+    public List<GameObject> WeaponList = new List<GameObject>();
+
+    private void Start()
+    {
+
+    }
 }
