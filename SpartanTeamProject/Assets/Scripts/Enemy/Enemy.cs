@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        stateMachine.ChangeState(stateMachine.ProwlState);
+        stateMachine.ChangeState(stateMachine.ChasingState);
     }
 
     private void Update()

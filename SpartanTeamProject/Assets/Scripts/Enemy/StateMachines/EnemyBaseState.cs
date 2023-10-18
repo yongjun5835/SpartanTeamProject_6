@@ -5,6 +5,8 @@ public class EnemyBaseState : IState
     protected EnemyStateMachine stateMachine;
     protected readonly EnemySO data;
 
+    protected float timer = 0;
+
     protected enum TargetPos
     {
         NotInRange, ChaseRange, AttackRange, FleeRange
@@ -27,7 +29,8 @@ public class EnemyBaseState : IState
        
     }
     public virtual void Update()
-    {       
+    {
+        timer += Time.deltaTime;
         // TODO
         // 내 턴이면서
         // 플레이어가 감지되지 않을 때 - OnProwl
