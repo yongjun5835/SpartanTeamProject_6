@@ -18,6 +18,8 @@ public class Porjectiles : MonoBehaviour
             Vector3Int cellPos = collision.gameObject.GetComponent<Tilemap>().WorldToCell(transform.position);
             Debug.Log($"¼¿Æ÷½º {cellPos}");
             collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y - 1), null);
+            collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y), null);
+            collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y + 1), null);
 
             Destroy(this.gameObject);
         }
