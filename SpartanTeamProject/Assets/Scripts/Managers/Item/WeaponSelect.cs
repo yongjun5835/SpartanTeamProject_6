@@ -12,14 +12,13 @@ public class WeaponSelect : MonoBehaviour
     public List<GameObject> selectedWeapons = new List<GameObject>(); // 선택된 무기 리스트
     public Button gameStartButton;          // 게임 시작 버튼
     public Transform weaponSlotPanel;
-
+    public GameObject[] NoUse;
+    public GameObject WeaponUI;
     private void Start()
     {
         // 처음에는 게임 시작 버튼 비활성화
         gameStartButton.interactable = false;
         gameStartButton.onClick.AddListener(StartGame);
-
-        
     }
  
     public void WeaponSelection(GameObject weaponButton)
@@ -50,7 +49,11 @@ public class WeaponSelect : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("MainScene");
-        DontDestroyOnLoad(weaponSlotPanel);
+        DontDestroyOnLoad(WeaponUI);
+        foreach(var t in NoUse)
+        {
+            t.SetActive(false);
+        }
     }
 
 
