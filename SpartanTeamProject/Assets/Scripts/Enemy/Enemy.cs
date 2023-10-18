@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         stateMachine.Update();
+        Debug.Log(stateMachine.curState.ToString());
     }
 
     private void FixedUpdate()
