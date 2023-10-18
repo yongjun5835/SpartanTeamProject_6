@@ -10,7 +10,7 @@ public class EnemyAttackState : EnemyGroundState
     {
         base.Enter();
         stateMachine.Enemy.Animator.SetTrigger(stateMachine.Enemy.AnimData.AttackParameterHash);
-        ProjectileManager.instance.EnemyShoot(0, 20f, stateMachine.Enemy.transform.position);
+        ProjectileManager.instance.EnemyShoot(stateMachine.Enemy.transform.position);
     }
 
     public override void Exit()
