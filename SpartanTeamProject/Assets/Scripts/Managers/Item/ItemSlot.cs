@@ -12,17 +12,17 @@ public class ItemSlot : MonoBehaviour
     [SerializeField] private GameObject weaponPanel;
     [SerializeField] private GameObject itemPanel;
 
-    [SerializeField] private List<Button> weaponSlots;
+    [SerializeField] private Button weaponSlots;
     [SerializeField] private List<Button> itemSlots;
 
     [SerializeField] private TextMeshProUGUI weaponTitle;
     [SerializeField] private TextMeshProUGUI itemTitle;
 
 
-    private int currentWeaponSlot = 0;
+    
     private int currentItemSlot = 0;
     private int maxSlots = 5;
-    private int selectedWeaponIndex = 0;
+    
 
 
     // Start is called before the first frame update
@@ -39,22 +39,14 @@ public class ItemSlot : MonoBehaviour
 
         for (int i = 0; i < maxSlots; i++)
         {
-            weaponSlots[i].gameObject.SetActive(true);
+            weaponSlots.gameObject.SetActive(true);
             itemSlots[i].gameObject.SetActive(true);
 
             Color itemSlotColor = itemSlots[i].image.color;
             itemSlotColor.a = 0.1f;
             itemSlots[i].image.color = itemSlotColor;
         }
-
-        // 초기 설정: 0번 슬롯 알파값을 1로, 나머지 슬롯 알파값을 0.5로 설정
-        for (int i = 0; i < maxSlots; i++)
-        {
-            float alpha = (i == 0) ? 1.0f : 0.5f; // 0번 슬롯 알파값을 1로, 나머지 슬롯 알파값을 0.5로 설정
-            SetSlotAlpha(i, alpha);
-            int weaponIndex = i; // 현재 무기 슬롯의 인덱스를 저장
-            weaponSlots[i].onClick.AddListener(() => SelectWeapon(weaponIndex));
-        }
+             
 
     }
 
@@ -117,8 +109,6 @@ public class ItemSlot : MonoBehaviour
         }
     }
 
-
-
     //아이템 사용 시 슬릇 비활성화
     public void UseItem()
     {
@@ -141,30 +131,4 @@ public class ItemSlot : MonoBehaviour
         }
     }
 
-    private void SetSlotAlpha(int slotIndex, float alpha)
-    {
-        Color slotColor = weaponSlots[slotIndex].image.color;
-        slotColor.a = alpha;
-        weaponSlots[slotIndex].image.color = slotColor;
-    }
-
-    private void SelectWeapon(int weaponIndex)
-    {
-        // 장착 중인 무기의 슬롯 알파값을 0.5로 설정
-        SetSlotAlpha(selectedWeaponIndex, 0.5f);
-
-        // 선택한 무기의 슬롯 알파값을 1로 설정
-        SetSlotAlpha(weaponIndex, 1.0f);
-
-        // 선택한 무기를 장착
-        EquipWeapon(weaponIndex);
-
-        // 선택한 무기의 인덱스를 업데이트
-        selectedWeaponIndex = weaponIndex;
-    }
-
-    private void EquipWeapon(int weaponIndex)
-    {
-
-    }
 }
