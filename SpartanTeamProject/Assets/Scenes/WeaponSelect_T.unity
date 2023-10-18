@@ -1023,6 +1023,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dfc8f9ef9bd477f47941ae8c387c87c0, type: 2}
   - {fileID: 11400000, guid: a12d3314678ebd944842e48dafc7a352, type: 2}
   - {fileID: 11400000, guid: e02b80399c3c03b438ca8a9c0fefa270, type: 2}
+  WeaponList: []
 --- !u!1 &3576444938377866599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1366,11 @@ MonoBehaviour:
   selectedWeapons: []
   gameStartButton: {fileID: 5514021057875778159}
   weaponSlotPanel: {fileID: 6825896574390190454}
+  NoUse:
+  - {fileID: 3576444938377866599}
+  - {fileID: 4072958941675102409}
+  - {fileID: 5042659793063966257}
+  WeaponUI: {fileID: 8745291510274342719}
 --- !u!222 &4769401366150266078
 CanvasRenderer:
   m_ObjectHideFlags: 0
