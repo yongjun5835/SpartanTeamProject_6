@@ -7458,7 +7458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0.2
+  m_LookaheadTime: 1
   m_LookaheadSmoothing: 5
   m_LookaheadIgnoreY: 0
   m_XDamping: 3
@@ -7468,8 +7468,8 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.2
-  m_DeadZoneHeight: 0.1
+  m_DeadZoneWidth: 0
+  m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.6
@@ -7805,6 +7805,7 @@ MonoBehaviour:
   confiner: {fileID: 0}
   curTarget: {fileID: 0}
   player: {fileID: 2111328134}
+  mode: 0
   zoomMaxSize: 10
   zoomMinSize: 5
   freeCameraMoveSpeed: 10
@@ -16491,6 +16492,7 @@ MonoBehaviour:
   - {fileID: 8572482298909959174, guid: 866ac80c1a282004ebd34983e92e0357, type: 3}
   - {fileID: 8572482298909959174, guid: a313b5d50bf2ae949aab1f078086db14, type: 3}
   - {fileID: 8572482298909959174, guid: 0642ee02a456d90419aa0d23490e832c, type: 3}
+  slots: []
 --- !u!4 &1478395751
 Transform:
   m_ObjectHideFlags: 0
@@ -17068,7 +17070,7 @@ GameObject:
   - component: {fileID: 1698645319}
   m_Layer: 0
   m_Name: ProjectileSpawnPoint
-  m_TagString: ProjectileSpawnPoint
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18738,3 +18740,68 @@ MonoBehaviour:
   - {fileID: 1688890647}
   weaponTitle: {fileID: 801037445}
   itemTitle: {fileID: 1901776268}
+--- !u!1001 &5748814843910020244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995712844007722712, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688097232492580548, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_Name
+      value: Enemy_Archer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6688097232492580548, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07d5eb5a2fe1a654db95ffbd90ee13ff, type: 3}
