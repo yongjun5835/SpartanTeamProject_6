@@ -15,6 +15,8 @@ public class Enemy : MonoBehaviour
 
     private EnemyStateMachine stateMachine;
 
+    public bool IsMyTurn = false;
+
     private void Awake()
     {
         AnimData.Initialize();
@@ -27,7 +29,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        stateMachine.ChangeState(stateMachine.ChasingState);
+        stateMachine.ChangeState(stateMachine.IdleState);
     }
 
     private void Update()
