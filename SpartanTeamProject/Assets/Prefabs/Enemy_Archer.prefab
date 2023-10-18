@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 9157384506387304775}
   m_Layer: 0
   m_Name: Enemy_Archer
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,7 +288,7 @@ Transform:
   m_Children:
   - {fileID: 2686250066717970848}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7942161202597626709
 Animator:

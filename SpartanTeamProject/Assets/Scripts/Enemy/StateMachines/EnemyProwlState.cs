@@ -43,6 +43,10 @@ public class EnemyProwlState : EnemyGroundState
         {
             stateMachine.Enemy.transform.localScale = new Vector3(-1f, 1f, 1f);
         }
+        else
+        {
+            stateMachine.Enemy.transform.localScale = new Vector3(1f, 1f, 1f);
+        }
         Move(direction);
     }
 

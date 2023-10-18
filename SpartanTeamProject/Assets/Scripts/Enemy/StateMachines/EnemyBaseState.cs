@@ -109,7 +109,7 @@ public class EnemyBaseState : IState
                     targetPos = TargetPos.FleeRange;
                 }
             }
-        }
+        } // 동시 반환 문제
         else
         {
             targetPos = TargetPos.NotInRange;
