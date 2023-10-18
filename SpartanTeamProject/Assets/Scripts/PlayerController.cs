@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool isSetPower = false;
     private bool isShoot = false;
     private bool freezeMove = false;
+    public bool IsMyTurn;
 
     private Vector3 startPos;
 
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         startPos = transform.position;
+        //IsMyTurn = GameManager.Instance.result;
     }
 
     private void Start()
@@ -42,44 +44,47 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (isSetDir)
+        if (IsMyTurn)
         {
-            Crosshair.gameObject.SetActive(true);
-            Crosshair.gameObject.transform.rotation = Quaternion.Euler(0, 0, Mathf.Clamp(aimAngle, 90, 180));
-            FindAngle();
-        }
+            if (isSetDir)
+            {
+                Crosshair.gameObject.SetActive(true);
+                Crosshair.gameObject.transform.rotation = Quaternion.Euler(0, 0, Mathf.Clamp(aimAngle, 90, 180));
+                FindAngle();
+            }
 
-        if (isSetDir && Input.GetMouseButtonDown(0))
-        {
-            Debug.Log($"마우스 클릭 {isSetDir} {Time.frameCount.ToString()}");
-            isSetPower = true;
-            isSetDir = false;
-            freezeMove = true;
-            testBtn.GetComponent<Button>().interactable = false;
-        }
+            if (isSetDir && Input.GetMouseButtonDown(0))
+            {
+                Debug.Log($"마우스 클릭 {isSetDir} {Time.frameCount.ToString()}");
+                isSetPower = true;
+                isSetDir = false;
+                freezeMove = true;
+                testBtn.GetComponent<Button>().interactable = false;
+            }
 
-        if (isSetPower && Input.GetMouseButton(0))
-        {
-            powerBar.gameObject.SetActive(true);
-            currentPower += Time.deltaTime * 100;
-            if (currentPower > maxPower + 5)
-                currentPower = 0;
-            powerBar.value = currentPower / maxPower;
-            isShoot = true;
-        }
+            if (isSetPower && Input.GetMouseButton(0))
+            {
+                powerBar.gameObject.SetActive(true);
+                currentPower += Time.deltaTime * 100;
+                if (currentPower > maxPower + 5)
+                    currentPower = 0;
+                powerBar.value = currentPower / maxPower;
+                isShoot = true;
+            }
 
-        if (isShoot && Input.GetMouseButtonUp(0))
-        {
-            isSetPower = false;
-            Debug.Log("발사");
-            anim.SetTrigger("isShoot");
-            isShoot = false;
-            // 발사 로직
-            ProjectileManager.instance.Shoot();
-        }
+            if (isShoot && Input.GetMouseButtonUp(0))
+            {
+                isSetPower = false;
+                Debug.Log("발사");
+                anim.SetTrigger("isShoot");
+                isShoot = false;
+                // 발사 로직
+                ProjectileManager.instance.Shoot();
+            }
 
-        if (!freezeMove)
-            Move();
+            if (!freezeMove)
+                Move();
+        }
     }
 
     public void SettingDir()
