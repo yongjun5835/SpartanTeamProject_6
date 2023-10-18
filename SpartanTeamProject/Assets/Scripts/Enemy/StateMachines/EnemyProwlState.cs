@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class EnemyProwlState : EnemyGroundState
 {
+    Vector3 movementDirection;
+
     public EnemyProwlState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
     {
     }
@@ -11,7 +13,8 @@ public class EnemyProwlState : EnemyGroundState
     {
         base.Enter();
         StartAnimation(stateMachine.Enemy.AnimData.WalkParameterHash);
-        Move();
+        movementDirection = GetMovementDirection();
+        
     }
 
     public override void Exit()
@@ -22,18 +25,17 @@ public class EnemyProwlState : EnemyGroundState
 
     public override void Update()
     {
-        base.Update();        
+        base.Update();
+        Move();
     }
 
     public override void PhysicsUpdate()
     {
-        base.PhysicsUpdate();
-        
+        base.PhysicsUpdate();        
     }
 
     protected override void Move()
     {
-        Vector3 movementDirection = GetMovementDirection();
         if(movementDirection == Vector3.right)
         {
             stateMachine.Enemy.transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -49,10 +51,14 @@ public class EnemyProwlState : EnemyGroundState
         else
             return Vector3.left;
     }
+    
     protected override void Move(Vector3 direction)
     {
         float movementSpeed = GetMovementSpeed();
-        Vector2 movePos = new Vector2(direction.x + 2f, 0f);
-        stateMachine.Enemy._Rigidbody.MovePosition(Vector2.Lerp(stateMachine.Enemy._Rigidbody.position, movePos, movementSpeed));
-    }  
+        Vector2 movePos = new Vector2(direction.x, 0f);
+        Vector2 goalPos = stateMachine.Enemy._Rigidbody.position + movePos;
+        Vector2 lerpPos = Vector2.Lerp(stateMachine.Enemy._Rigidbody.position, goalPos, movementSpeed * Time.deltaTime);
+        stateMachine.Enemy._Rigidbody.MovePosition(lerpPos);
+        
+    }
 }

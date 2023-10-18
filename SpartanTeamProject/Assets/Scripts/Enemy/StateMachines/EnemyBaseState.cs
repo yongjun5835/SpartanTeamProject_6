@@ -34,7 +34,8 @@ public class EnemyBaseState : IState
         // 플레이어가 attack range - attack
         // 플레이어가 chasing range - chasing
         // 플레이어가 fleeing range - fleeing
-
+        // if (turn != enemy)
+        // return;
         //switch (TargetPosInRange())
         //{
         //    case TargetPos.NotInRange:
