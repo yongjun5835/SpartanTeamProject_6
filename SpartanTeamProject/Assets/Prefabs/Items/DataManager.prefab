@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8544711557220792907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216559038887913584}
+  - component: {fileID: 3407859655868491358}
+  - component: {fileID: 4399974762024474045}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216559038887913584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544711557220792907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 537, y: 104, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3407859655868491358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544711557220792907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173ac3b3143a4e344861c03323b6b0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapon:
+  - {fileID: 11400000, guid: 6c7cc90589b3ef24d80a63318a3ade8d, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &4399974762024474045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544711557220792907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1bde0094b12ee847b21f63de1abdaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponButtons:
+  - {fileID: 2566807510154428282, guid: 4c20ee95bec0b504aa640eebad4313d3, type: 3}
+  - {fileID: 4719896085163704297, guid: af82b68580b9b644c9c9e92aac7918d1, type: 3}
+  - {fileID: 62976128238843794, guid: 8d17cf3c84ae53f4a9c33a9531a66ae2, type: 3}
+  - {fileID: 7062480208713218105, guid: d8d2b68b0cf8c3546860203f40baed18, type: 3}
+  - {fileID: 4786345394775053508, guid: 8633ab33178e9ba479c05c8f32ac3dba, type: 3}
+  - {fileID: 5038699592118283225, guid: 5b62130fd31efd04799651281edb90f3, type: 3}
+  - {fileID: 8017691704317412845, guid: d342b9924570105499f78e981f0baeca, type: 3}
+  - {fileID: 8301853332334638112, guid: d4aaa6cca7e0fc040a615e2e701c13ad, type: 3}
+  - {fileID: 3890077026594541727, guid: e0d33e2a0f2dfec408eb1c16bf08cbb6, type: 3}
+  - {fileID: 8741342196665437765, guid: 97817308b702a854382f564dc27615d8, type: 3}
+  maxWeaponSelect: 5
+  selectedWeapons: []
+  gameStartButton: {fileID: 5514021058387373546, guid: 938658e8aa8fc3d4cb70bf72d00e7e06, type: 3}
+  weaponSlotPanel: {fileID: 6825896573921218551, guid: 67cb94cc49d950247a72d5b9e800b97a, type: 3}
