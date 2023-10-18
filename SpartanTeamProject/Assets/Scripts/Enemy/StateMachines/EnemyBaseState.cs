@@ -33,12 +33,15 @@ public class EnemyBaseState : IState
         timer += Time.deltaTime;        
 
         if (!stateMachine.Enemy.IsMyTurn)
-            return;        
+        {
+            OnIdle();
+            return;
+        }   
 
         switch (TargetPosInRange())
         {
             case TargetPos.NotInRange:
-                OnProwl();
+                OnProwl();                
                 break;
             case TargetPos.ChaseRange:
                 OnChasing();
@@ -96,20 +99,18 @@ public class EnemyBaseState : IState
 
         float playerDistanceSqr = (playerPos - enemyPos).sqrMagnitude;
 
-        if (playerDistanceSqr <= stateMachine.Enemy.Data.ChasingRange * stateMachine.Enemy.Data.ChasingRange)
+        if (playerDistanceSqr <= stateMachine.Enemy.Data.FleeingRange * stateMachine.Enemy.Data.FleeingRange)
+        {
+            targetPos = TargetPos.FleeRange;
+        }
+        else if (playerDistanceSqr <= stateMachine.Enemy.Data.AttackRange * stateMachine.Enemy.Data.AttackRange)
+        {
+            targetPos = TargetPos.AttackRange;
+        }
+        else if (playerDistanceSqr <= stateMachine.Enemy.Data.ChasingRange * stateMachine.Enemy.Data.ChasingRange)
         {
             targetPos = TargetPos.ChaseRange;
-
-            if (playerDistanceSqr <= stateMachine.Enemy.Data.AttackRange * stateMachine.Enemy.Data.AttackRange)
-            {
-                targetPos = TargetPos.AttackRange;
-
-                if (playerDistanceSqr <= stateMachine.Enemy.Data.FleeingRange * stateMachine.Enemy.Data.FleeingRange)
-                {
-                    targetPos = TargetPos.FleeRange;
-                }
-            }
-        }
+        } 
         else
         {
             targetPos = TargetPos.NotInRange;
@@ -119,41 +120,26 @@ public class EnemyBaseState : IState
     }
     protected void OnIdle()
     {
-        if(stateMachine.curState == stateMachine.IdleState)
-            return;    
-
         stateMachine.ChangeState(stateMachine.IdleState);
     }
 
     protected void OnProwl()
     {
-        if (stateMachine.curState == stateMachine.ProwlState)
-            return;
-
         stateMachine.ChangeState(stateMachine.ProwlState);
     }
 
     protected void OnChasing()
     {
-        if (stateMachine.curState == stateMachine.ChasingState)
-            return;
-
         stateMachine.ChangeState(stateMachine.ChasingState);
     }
 
     protected void OnAttack()
     {
-        if (stateMachine.curState == stateMachine.AttackState)
-            return;
-
         stateMachine.ChangeState(stateMachine.AttackState);
     }
 
     protected void OnFleeing()
     {
-        if (stateMachine.curState == stateMachine.FleeingState)
-            return;
-
         stateMachine.ChangeState(stateMachine.FleeingState);
     }
 }

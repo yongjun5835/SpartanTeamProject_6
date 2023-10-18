@@ -11,7 +11,6 @@ public class Enemy : MonoBehaviour
 
     public Rigidbody2D _Rigidbody { get; private set; }
     public Animator Animator { get; private set; }
-    public ForceReceiver ForceReceiver { get; private set; }
 
     private EnemyStateMachine stateMachine;
 
@@ -22,7 +21,6 @@ public class Enemy : MonoBehaviour
         AnimData.Initialize();
         _Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
-        ForceReceiver = GetComponent<ForceReceiver>();
 
         stateMachine = new EnemyStateMachine(this);
     }
@@ -35,6 +33,7 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         stateMachine.Update();
+        Debug.Log("현재 상태" + stateMachine.curState.ToString());
     }
 
     private void FixedUpdate()

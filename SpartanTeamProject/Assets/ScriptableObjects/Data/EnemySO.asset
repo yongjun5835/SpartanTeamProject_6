@@ -14,11 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Health>k__BackingField: 100
   <BaseSpeed>k__BackingField: 2
-  <chasingSpeedModifier>k__BackingField: 1.5
   <RunSpeedModifier>k__BackingField: 2
-  <ChasingRange>k__BackingField: 15
-  <AttackRange>k__BackingField: 5
-  <FleeingRange>k__BackingField: 2
+  <ChasingRange>k__BackingField: 5
+  <AttackRange>k__BackingField: 3
+  <FleeingRange>k__BackingField: 1
   <Damage>k__BackingField: 10
   <AttackDelay>k__BackingField: 0.5
   <Dealing_Start_TransitionTime>k__BackingField: 0
