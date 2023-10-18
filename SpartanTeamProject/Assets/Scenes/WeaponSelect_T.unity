@@ -123,6 +123,69 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &602627958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602627960}
+  - component: {fileID: 602627959}
+  m_Layer: 0
+  m_Name: ProjectileManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &602627959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602627958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7238ec9aaeb068144bba3e0253f557e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+  projectileSpawnPoint: {fileID: 0}
+  projectiles:
+  - {fileID: 8572482298909959174, guid: c1e67e64d5659bc4ea5eb6f5ab642184, type: 3}
+  - {fileID: 8572482298909959174, guid: 47f395141b27f9641802acba16062f81, type: 3}
+  - {fileID: 8572482298909959174, guid: e39959058f8f0c64a974f2ce40a2957a, type: 3}
+  - {fileID: 8572482298909959174, guid: ce499dc155821774989682e178d300ed, type: 3}
+  - {fileID: 8572482298909959174, guid: e0bd983e020e1b04d8d678eb8ccf9e4d, type: 3}
+  - {fileID: 8572482298909959174, guid: 9e9699f91cec749408eb7721f31252de, type: 3}
+  - {fileID: 8572482298909959174, guid: a16cfc63886b13443aaed65266b22939, type: 3}
+  - {fileID: 8572482298909959174, guid: 866ac80c1a282004ebd34983e92e0357, type: 3}
+  - {fileID: 8572482298909959174, guid: a313b5d50bf2ae949aab1f078086db14, type: 3}
+  - {fileID: 8572482298909959174, guid: 0642ee02a456d90419aa0d23490e832c, type: 3}
+  weapons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!4 &602627960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602627958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9106674, y: 1.4640177, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1441797360
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +484,7 @@ GameObject:
   - component: {fileID: 2255904342293057075}
   m_Layer: 0
   m_Name: Button (2)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -627,7 +690,7 @@ GameObject:
   - component: {fileID: 3868050799567102236}
   m_Layer: 0
   m_Name: Button (8)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -870,7 +933,7 @@ GameObject:
   - component: {fileID: 4393974021025115901}
   m_Layer: 0
   m_Name: Button (5)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -919,7 +982,7 @@ GameObject:
   - component: {fileID: 8379875783081538930}
   m_Layer: 0
   m_Name: Button (1)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -938,7 +1001,7 @@ GameObject:
   - component: {fileID: 6146678186082600762}
   m_Layer: 0
   m_Name: Button (6)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,7 +1020,7 @@ GameObject:
   - component: {fileID: 5503685438977147039}
   m_Layer: 0
   m_Name: Button (7)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1443,7 +1506,7 @@ GameObject:
   - component: {fileID: 13604757536078204}
   m_Layer: 0
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: Weapon_Default
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2172,7 +2235,7 @@ GameObject:
   - component: {fileID: 6884730317557440689}
   m_Layer: 0
   m_Name: Button (3)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2356,7 +2419,7 @@ GameObject:
   - component: {fileID: 4369076727715510951}
   m_Layer: 0
   m_Name: Button (4)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2422,7 +2485,7 @@ GameObject:
   - component: {fileID: 5435613509441014069}
   m_Layer: 0
   m_Name: Button (9)
-  m_TagString: Untagged
+  m_TagString: Weapon_Weapon9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

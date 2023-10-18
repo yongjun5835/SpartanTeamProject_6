@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,6 +15,7 @@ public class WeaponSelect : MonoBehaviour
     public Transform weaponSlotPanel;
     public GameObject[] NoUse;
     public GameObject WeaponUI;
+
     private void Start()
     {
         // 처음에는 게임 시작 버튼 비활성화
@@ -34,6 +36,8 @@ public class WeaponSelect : MonoBehaviour
         {
             // 보유 가능한 최대 무기 수를 아직 고르지 않았으면 무기 선택
             selectedWeapons.Add(weaponButton);
+            selectedWeapons[selectedWeapons.Count - 1].tag = weaponButton.tag;
+            Debug.Log(weaponButton.tag);
         }
 
         // 선택된 무기 수에 따라 게임 시작 버튼 활성화
@@ -86,7 +90,9 @@ public class WeaponSelect : MonoBehaviour
         for (int i = 0; i < Mathf.Min(maxSlotCount, selectedWeapons.Count); i++)
         {
             GameObject selectedWeapon = selectedWeapons[i];
-            GameObject slot = new GameObject("WeaponSlot"); 
+            selectedWeapon.tag = selectedWeapons[i].tag;
+            GameObject slot = new GameObject("WeaponSlot");
+            slot.tag = selectedWeapon.tag;
             slot.transform.SetParent(weaponSlotPanel); 
 
            
@@ -112,6 +118,8 @@ public class WeaponSelect : MonoBehaviour
            
             int slotIndex = i; // 슬롯의 인덱스 저장
             slotButton.onClick.AddListener(() => SlotClicked(slotIndex));
+
+            ProjectileManager.instance.slots.Add(slot);
         }
     }
 

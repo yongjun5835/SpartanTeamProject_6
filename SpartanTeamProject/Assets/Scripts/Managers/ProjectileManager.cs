@@ -12,10 +12,10 @@ public class ProjectileManager : MonoBehaviour
     [Header("# Projectiles")]
     [SerializeField]
     private GameObject[] projectiles;
-    [Header("# Weapon Btn")]
-    public Button[] weapons;
 
     private GameObject selectedProjectile;
+    [Header("# Weapon Btn")]
+    public List<GameObject> slots = new List<GameObject>();
 
     private void Awake()
     {
@@ -42,10 +42,10 @@ public class ProjectileManager : MonoBehaviour
 
     public void selectBtn(int i)
     {
-        if (weapons[i].tag == "Weapon_Default")
+        if (slots[i].tag == "Weapon_Default")
             selectedProjectile = projectiles[0];
         else
-            selectedProjectile = projectiles[int.Parse(weapons[i].tag[13].ToString())];
+            selectedProjectile = projectiles[int.Parse(slots[i].tag[13].ToString())];
 
         Debug.Log(selectedProjectile);
     }
