@@ -90,7 +90,6 @@ public class WeaponSelect : MonoBehaviour
         for (int i = 0; i < Mathf.Min(maxSlotCount, selectedWeapons.Count); i++)
         {
             GameObject selectedWeapon = selectedWeapons[i];
-            selectedWeapon.tag = selectedWeapons[i].tag;
             GameObject slot = new GameObject("WeaponSlot");
             slot.tag = selectedWeapon.tag;
             slot.transform.SetParent(weaponSlotPanel); 
@@ -115,11 +114,10 @@ public class WeaponSelect : MonoBehaviour
 
             // ½½·Ô¿¡ ¹öÆ° ÄÄÆ÷³ÍÆ® Ãß°¡
             Button slotButton = slot.AddComponent<Button>();
+            slotButton.onClick.AddListener(delegate { ProjectileManager.instance.selectBtn(slotButton.gameObject.tag); });
            
             int slotIndex = i; // ½½·ÔÀÇ ÀÎµ¦½º ÀúÀå
             slotButton.onClick.AddListener(() => SlotClicked(slotIndex));
-
-            ProjectileManager.instance.slots.Add(slot);
         }
     }
 
