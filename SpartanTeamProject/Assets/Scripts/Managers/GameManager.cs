@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     float time;
     bool result = false;
     bool IsCourutineRunning = false;
-
+    
     private void Awake()
     {
         if(instance == null)
