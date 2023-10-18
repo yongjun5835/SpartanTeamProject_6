@@ -76,6 +76,9 @@ public class GameManager : MonoBehaviour
     }
     public bool TurnCheck()
     {
+        if (Enemys.Length == 0)
+            return false;
+
         if (TurnCount / Enemys.Length == 1)
         {
             result = true;
