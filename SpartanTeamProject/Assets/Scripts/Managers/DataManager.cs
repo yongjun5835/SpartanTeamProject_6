@@ -24,4 +24,10 @@ public class DataManager : MonoBehaviour
         }
     }
     public WeaponSO[] Weapon;
+    public List<GameObject> WeaponList = new List<GameObject>();
+
+    private void Start()
+    {
+
+    }
 }
