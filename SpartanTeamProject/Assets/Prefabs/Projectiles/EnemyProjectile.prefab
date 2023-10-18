@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5715151711287646359}
   - component: {fileID: 6385891209467166476}
   - component: {fileID: 6896764105216082426}
-  - component: {fileID: 3093771407103293787}
+  - component: {fileID: -8843604044043886517}
   m_Layer: 0
-  m_Name: Weapon5Projectile
-  m_TagString: Weapon_Weapon5
+  m_Name: EnemyProjectile
+  m_TagString: Weapon_Default
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 25256b259bb77ad4f9a4b139513f4086, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d3afae691e802047a5460ddee4a8466, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -159,7 +159,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3093771407103293787
+--- !u!114 &-8843604044043886517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,6 +168,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8572482298909959174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b55478b1e2e3c2c478c8e9faf238e8aa, type: 3}
+  m_Script: {fileID: 11500000, guid: fd80186d748609c4491eb27deda3fc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
