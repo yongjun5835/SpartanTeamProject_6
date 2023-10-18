@@ -21,10 +21,11 @@ public class GameManager : MonoBehaviour
     public CameraController cameraController;
     public int TurnCount;
     public Text timer;
+    public Text EnemyLeft;
     float time;
     bool result = false;
     bool IsCourutineRunning = false;
-
+    
     private void Awake()
     {
         if(instance == null)
@@ -47,6 +48,8 @@ public class GameManager : MonoBehaviour
         time = float.Parse(timer.text);
         time -= Time.deltaTime;
         timer.text = time.ToString("N2");
+        int EnemyCount = Enemys.Length;
+        EnemyLeft.text = "³²Àº Àû : " + EnemyCount.ToString();
         if (!IsCourutineRunning)
         {
             StartCoroutine(Turn());
