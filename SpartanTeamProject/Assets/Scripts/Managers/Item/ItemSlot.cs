@@ -30,7 +30,7 @@ public class ItemSlot : MonoBehaviour
     {
         openWeaponSlot.onClick.AddListener(OpenSlot_Weapon);
         openItemSlot.onClick.AddListener(OpenSlot_Item);
-        weaponPanel.SetActive(false);
+        weaponPanel.SetActive(true);
         itemPanel.SetActive(false);
         weaponTitle.gameObject.SetActive(true);
         itemTitle.gameObject.SetActive(false);
