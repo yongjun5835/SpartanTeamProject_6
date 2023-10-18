@@ -1,12 +1,16 @@
+using UnityEngine;
 
 public class EnemyIdleState : EnemyGroundState
-{    
+{
+    protected float idleTime;
+
     public EnemyIdleState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
     {
     }
 
     public override void Enter()
     {
+        idleTime = 0f;
         stateMachine.MovementSpeedModifier = 0f;
         base.Enter();
         StartAnimation(stateMachine.Enemy.AnimData.IdleParameterHash);
@@ -20,11 +24,9 @@ public class EnemyIdleState : EnemyGroundState
 
     public override void Update()
     {
+        idleTime += Time.deltaTime;
+        if (idleTime < 2f)
+            return;
         base.Update();
-        // TODO
-        // if (turn == enemy && timer > 2f)
-        // timer = 0;
-        // onprowl()
-        // 
     }  
 }
