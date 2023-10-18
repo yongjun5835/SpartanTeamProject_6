@@ -14,8 +14,6 @@ public class ProjectileManager : MonoBehaviour
     private GameObject[] projectiles;
 
     private GameObject selectedProjectile;
-    [Header("# Weapon Btn")]
-    public List<GameObject> slots = new List<GameObject>();
 
     private void Awake()
     {
@@ -32,6 +30,8 @@ public class ProjectileManager : MonoBehaviour
 
     public void Shoot()
     {
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        projectileSpawnPoint = GameObject.FindGameObjectWithTag("ProjectileSpawnPoint").transform;
         GameObject projectile = Instantiate(selectedProjectile, projectileSpawnPoint.position, Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward));
         GameManager.Instance.cameraController.SetTarget(projectile.transform);
         Vector3 dir = Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward) * Vector3.right;
@@ -40,41 +40,15 @@ public class ProjectileManager : MonoBehaviour
         Debug.Log($"shootPoewr: {shootPower}");
     }
 
-    public void selectBtn(int i)
+    public void selectBtn(string tag)
     {
-        if (slots[i].tag == "Weapon_Default")
+        if (tag == "Weapon_Default")
             selectedProjectile = projectiles[0];
         else
-            selectedProjectile = projectiles[int.Parse(slots[i].tag[13].ToString())];
+            selectedProjectile = projectiles[int.Parse(tag[13].ToString())];
 
         Debug.Log(selectedProjectile);
     }
-
-    public void selectBtn1()
-    {
-        selectBtn(0);
-    }
-
-    public void selectBtn2()
-    {
-        selectBtn(1);
-    }
-
-    public void selectBtn3()
-    {
-        selectBtn(2);
-    }
-
-    public void selectBtn4()
-    {
-        selectBtn(3);
-    }
-
-    public void selectBtn5()
-    {
-        selectBtn(4);
-    }
-
     public void EnemyShoot( int i, float shootPower, Vector3 shootTip)
     {
         Debug.Log("���� ȣ���?6");
