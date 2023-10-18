@@ -33,7 +33,7 @@ public class ProjectileManager : MonoBehaviour
     public void Shoot()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        projectileSpawnPoint = GameObject.FindGameObjectWithTag("ProjectileSpawnPoint").transform;
+        projectileSpawnPoint = GameObject.FindGameObjectWithTag("Player").transform.GetChild(2);
         GameObject projectile = Instantiate(selectedProjectile, projectileSpawnPoint.position, Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward));
         GameManager.Instance.cameraController.SetTarget(projectile.transform);
         Vector3 dir = Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward) * Vector3.right;

@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public int TurnCount;
     public Text timer;
     public Text EnemyLeft;
-    float time;
+    float time = 10f;
     bool result = false;
     bool IsCourutineRunning = false;
     
@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         TurnCheck();
-        time = float.Parse(timer.text);
         time -= Time.deltaTime;
         timer.text = time.ToString("N2");
         int EnemyCount = Enemys.Length;
