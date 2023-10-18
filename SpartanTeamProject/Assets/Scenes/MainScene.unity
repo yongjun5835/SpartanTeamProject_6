@@ -16768,6 +16768,7 @@ MonoBehaviour:
   - {fileID: 8572482298909959174, guid: 866ac80c1a282004ebd34983e92e0357, type: 3}
   - {fileID: 8572482298909959174, guid: a313b5d50bf2ae949aab1f078086db14, type: 3}
   - {fileID: 8572482298909959174, guid: 0642ee02a456d90419aa0d23490e832c, type: 3}
+  enemyProjectile: {fileID: 8572482298909959174, guid: 761724e9736526b44aa3654f6aca2261, type: 3}
 --- !u!4 &1478395751
 Transform:
   m_ObjectHideFlags: 0
