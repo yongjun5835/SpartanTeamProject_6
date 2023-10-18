@@ -21,5 +21,10 @@ public class EnemyIdleState : EnemyGroundState
     public override void Update()
     {
         base.Update();
+        // TODO
+        // if (turn == enemy && timer > 2f)
+        // timer = 0;
+        // onprowl()
+        // 
     }  
 }

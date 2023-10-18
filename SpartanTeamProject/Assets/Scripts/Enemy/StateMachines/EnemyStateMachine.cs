@@ -24,7 +24,7 @@ public class EnemyStateMachine : StateMachine
         ProwlState = new EnemyProwlState(this);
         ChasingState = new EnemyChasingState(this);
         AttackState = new EnemyAttackState(this);
-
+        FleeingState = new EnemyFleeingState(this);
         MovementSpeed = enemy.Data.BaseSpeed;
     }
 }

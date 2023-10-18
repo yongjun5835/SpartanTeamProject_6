@@ -9,8 +9,7 @@ public class EnemyAnimationData
     [SerializeField] private string walkParameterName = "Walk";
     [SerializeField] private string runParameterName = "Run";
     [SerializeField] private string deadParameterName = "Dead";
-
-    [SerializeField] private string attackParameterName = "@Attack";
+    [SerializeField] private string attackParameterName = "Attack";
     
 
     public int GroundParameterHash { get; private set; }
