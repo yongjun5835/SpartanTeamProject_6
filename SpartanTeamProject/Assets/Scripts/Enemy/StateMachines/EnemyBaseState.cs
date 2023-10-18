@@ -5,6 +5,8 @@ public class EnemyBaseState : IState
     protected EnemyStateMachine stateMachine;
     protected readonly EnemySO data;
 
+    protected float timer = 0;
+
     protected enum TargetPos
     {
         NotInRange, ChaseRange, AttackRange, FleeRange
@@ -27,13 +29,11 @@ public class EnemyBaseState : IState
        
     }
     public virtual void Update()
-    {       
-        // TODO
-        // 내 턴이면서
-        // 플레이어가 감지되지 않을 때 - OnProwl
-        // 플레이어가 attack range - attack
-        // 플레이어가 chasing range - chasing
-        // 플레이어가 fleeing range - fleeing
+    {
+        timer += Time.deltaTime;        
+
+        if (!stateMachine.Enemy.IsMyTurn)
+            return;        
 
         switch (TargetPosInRange())
         {
@@ -117,23 +117,43 @@ public class EnemyBaseState : IState
 
         return targetPos;
     }
+    protected void OnIdle()
+    {
+        if(stateMachine.curState == stateMachine.IdleState)
+            return;    
+
+        stateMachine.ChangeState(stateMachine.IdleState);
+    }
+
     protected void OnProwl()
     {
+        if (stateMachine.curState == stateMachine.ProwlState)
+            return;
+
         stateMachine.ChangeState(stateMachine.ProwlState);
     }
 
     protected void OnChasing()
     {
+        if (stateMachine.curState == stateMachine.ChasingState)
+            return;
+
         stateMachine.ChangeState(stateMachine.ChasingState);
     }
 
     protected void OnAttack()
     {
+        if (stateMachine.curState == stateMachine.AttackState)
+            return;
+
         stateMachine.ChangeState(stateMachine.AttackState);
     }
 
     protected void OnFleeing()
     {
+        if (stateMachine.curState == stateMachine.FleeingState)
+            return;
+
         stateMachine.ChangeState(stateMachine.FleeingState);
     }
 }

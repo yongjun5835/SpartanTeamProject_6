@@ -21,10 +21,11 @@ public class GameManager : MonoBehaviour
     public CameraController cameraController;
     public int TurnCount;
     public Text timer;
+    public Text EnemyLeft;
     float time;
     bool result = false;
     bool IsCourutineRunning = false;
-
+    
     private void Awake()
     {
         if(instance == null)
@@ -47,6 +48,8 @@ public class GameManager : MonoBehaviour
         time = float.Parse(timer.text);
         time -= Time.deltaTime;
         timer.text = time.ToString("N2");
+        int EnemyCount = Enemys.Length;
+        EnemyLeft.text = "³²Àº Àû : " + EnemyCount.ToString();
         if (!IsCourutineRunning)
         {
             StartCoroutine(Turn());
@@ -76,7 +79,10 @@ public class GameManager : MonoBehaviour
     }
     public bool TurnCheck()
     {
-        if (TurnCount / Enemys.Length == 1)
+        if (Enemys.Length == 0)
+            return false;
+
+        if (TurnCount % (Enemys.Length+1) == 0)
         {
             result = true;
         }
@@ -84,32 +90,48 @@ public class GameManager : MonoBehaviour
         {
             result = false;
         }
-        if (TurnCount > Enemys.Length)
-        {
-            TurnCount = 0;
-        }
+        //if (TurnCount > Enemys.Length + 1)
+        //{
+        //    TurnCount = 0;
+        //}
         return result;
     }
     public void TurnStart()
     {
-        if (result)
+        if (TurnCount % (Enemys.Length +1) == Enemys.Length)
         {
-            Player.gameObject.GetComponent<PlayerController>().enabled = true;
+            Player.gameObject.GetComponent<PlayerController>().IsMyTurn = true;
         }
         else
         {
-            Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = true;
+            if (TurnCount % (Enemys.Length + 1) == 0)
+            {
+                Enemys[0].gameObject.GetComponent<Enemy>().IsMyTurn = true;
+            }
+            else
+            {
+                Enemys[TurnCount % (Enemys.Length + 1)].gameObject.GetComponent<Enemy>().IsMyTurn = true;
+            }
         }
     }
     public void TurnEnd()
     {
-        if (result)
+        if (TurnCount % (Enemys.Length + 1) -1 == Enemys.Length)
         {
-            Player.gameObject.GetComponent<PlayerController>().enabled = false;
+            Player.gameObject.GetComponent<PlayerController>().IsMyTurn = false;
+            Player.gameObject.GetComponent<PlayerController>().Refresh();
         }
         else
         {
-            Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = false;
+            // Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = false;
+            if (TurnCount % (Enemys.Length + 1)-1 < 0)
+            {
+                Enemys[0].gameObject.GetComponent<Enemy>().IsMyTurn = false;
+            }
+            else
+            {
+                Enemys[TurnCount % (Enemys.Length + 1) - 1].gameObject.GetComponent<Enemy>().IsMyTurn = false;
+            }
         }
     }
 
@@ -120,7 +142,7 @@ public class GameManager : MonoBehaviour
             IsCourutineRunning = true;
             TurnStart();
 
-            yield return new WaitForSecondsRealtime(time);
+            yield return new WaitForSeconds(time);
             TurnEnd();
             IsCourutineRunning = false;
         }

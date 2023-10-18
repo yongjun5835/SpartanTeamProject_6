@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -14,12 +15,11 @@ public class Enemy : MonoBehaviour
 
     private EnemyStateMachine stateMachine;
 
-   
+    public bool IsMyTurn = false;
 
     private void Awake()
     {
         AnimData.Initialize();
-
         _Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         ForceReceiver = GetComponent<ForceReceiver>();
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        stateMachine.ChangeState(stateMachine.ProwlState);
+        stateMachine.ChangeState(stateMachine.IdleState);
     }
 
     private void Update()

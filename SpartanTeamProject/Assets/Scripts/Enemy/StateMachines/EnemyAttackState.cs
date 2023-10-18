@@ -1,19 +1,20 @@
 
+using UnityEngine;
+
 public class EnemyAttackState : EnemyGroundState
 {
     public EnemyAttackState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
     {
     }
-
-    // Start is called before the first frame update
-    void Start()
+    public override void Enter()
     {
-        
+        base.Enter();
+        stateMachine.Enemy.Animator.SetTrigger(stateMachine.Enemy.AnimData.AttackParameterHash);
+        ProjectileManager.instance.EnemyShoot(0, 20f, stateMachine.Enemy.transform.position);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Exit()
     {
-        
+        base.Exit();
     }
 }
