@@ -104,7 +104,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = true;
+            // Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = true;
+            Enemys[TurnCount].gameObject.GetComponent<Enemy>().IsMyTurn = true;
         }
     }
     public void TurnEnd()
@@ -115,7 +116,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = false;
+            // Enemys[TurnCount].gameObject.GetComponent<EnemyTest>().enabled = false;
+            Enemys[TurnCount].gameObject.GetComponent<Enemy>().IsMyTurn = false;
         }
     }
 

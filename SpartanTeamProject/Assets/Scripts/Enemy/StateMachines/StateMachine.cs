@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class StateMachine : MonoBehaviour
 {
-    protected IState curState;
+    public IState curState { get; private set; }
 
     public void ChangeState(IState newState)
     {

@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class EnemyProwlState : EnemyGroundState
@@ -13,8 +12,7 @@ public class EnemyProwlState : EnemyGroundState
     {
         base.Enter();
         StartAnimation(stateMachine.Enemy.AnimData.WalkParameterHash);
-        direction = GetMovementDirection();
-        
+        direction = GetMovementDirection();        
     }
 
     public override void Exit()
@@ -30,7 +28,7 @@ public class EnemyProwlState : EnemyGroundState
         if (timer >= 2f)
         {
             timer = 0f;
-            stateMachine.ChangeState(stateMachine.IdleState);
+            OnIdle();
         }
     }
 
