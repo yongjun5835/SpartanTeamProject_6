@@ -109,6 +109,8 @@ public class GameManager : MonoBehaviour
         if (TurnCount % (Enemys.Length +1) == Enemys.Length)
         {
             Player.gameObject.GetComponent<PlayerController>().IsMyTurn = true;
+            Player.gameObject.GetComponent<PlayerController>().isSetDir = false;
+            Debug.Log($"isSetDir {Player.gameObject.GetComponent<PlayerController>().isSetDir}");
         }
         else
         {
