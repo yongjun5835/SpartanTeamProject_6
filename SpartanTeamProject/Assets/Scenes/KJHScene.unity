@@ -685,7 +685,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000011043061598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.37, y: -0.1, z: 0}
+  m_LocalPosition: {x: 3.75, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -824,12 +824,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Data>k__BackingField: {fileID: 11400000, guid: 8f4e51f320d38794eadd9f8b3b5616f0, type: 2}
   <AnimData>k__BackingField:
+    groundParameterName: '@Ground'
     idleParameterName: Idle
     walkParameterName: Walk
     runParameterName: Run
-    attackParameterName: Attack
     deadParameterName: Dead
-  _Transform: {fileID: 4000010952526490}
+    attackParameterName: Attack
 --- !u!114 &95000012910419063
 MonoBehaviour:
   m_ObjectHideFlags: 0

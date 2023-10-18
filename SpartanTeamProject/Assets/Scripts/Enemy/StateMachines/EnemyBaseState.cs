@@ -35,21 +35,21 @@ public class EnemyBaseState : IState
         // 플레이어가 chasing range - chasing
         // 플레이어가 fleeing range - fleeing
 
-        switch (TargetPosInRange())
-        {
-            case TargetPos.NotInRange:
-                OnProwl();
-                break;
-            case TargetPos.ChaseRange:
-                OnChasing();
-                break;
-            case TargetPos.AttackRange:
-                OnAttack();
-                break;
-            case TargetPos.FleeRange:
-                OnFleeing();
-                break;
-        }
+        //switch (TargetPosInRange())
+        //{
+        //    case TargetPos.NotInRange:
+        //        OnProwl();
+        //        break;
+        //    case TargetPos.ChaseRange:
+        //        OnChasing();
+        //        break;
+        //    case TargetPos.AttackRange:
+        //        OnAttack();
+        //        break;
+        //    case TargetPos.FleeRange:
+        //        OnFleeing();
+        //        break;
+        //}
     }   
 
     public virtual void PhysicsUpdate()

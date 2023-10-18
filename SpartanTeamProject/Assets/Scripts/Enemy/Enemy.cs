@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -14,12 +15,9 @@ public class Enemy : MonoBehaviour
 
     private EnemyStateMachine stateMachine;
 
-   
-
     private void Awake()
     {
         AnimData.Initialize();
-
         _Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
         ForceReceiver = GetComponent<ForceReceiver>();

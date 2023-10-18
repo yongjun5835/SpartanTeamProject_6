@@ -11,6 +11,7 @@ public class EnemyProwlState : EnemyGroundState
     {
         base.Enter();
         StartAnimation(stateMachine.Enemy.AnimData.WalkParameterHash);
+        Move();
     }
 
     public override void Exit()
@@ -21,8 +22,7 @@ public class EnemyProwlState : EnemyGroundState
 
     public override void Update()
     {
-        base.Update();
-        Move();
+        base.Update();        
     }
 
     public override void PhysicsUpdate()
@@ -52,7 +52,7 @@ public class EnemyProwlState : EnemyGroundState
     protected override void Move(Vector3 direction)
     {
         float movementSpeed = GetMovementSpeed();
-        Debug.Log(direction);
-        stateMachine.Enemy._Rigidbody.MovePosition((direction * movementSpeed) * Time.fixedDeltaTime);
+        Vector2 movePos = new Vector2(direction.x + 2f, 0f);
+        stateMachine.Enemy._Rigidbody.MovePosition(Vector2.Lerp(stateMachine.Enemy._Rigidbody.position, movePos, movementSpeed));
     }  
 }
