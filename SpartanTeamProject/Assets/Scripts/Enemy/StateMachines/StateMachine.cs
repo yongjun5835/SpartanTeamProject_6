@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class StateMachine : MonoBehaviour
+public abstract class StateMachine
 {
     public IState curState { get; private set; }
 

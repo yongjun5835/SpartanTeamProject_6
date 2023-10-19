@@ -1,4 +1,6 @@
 
+using System;
+using UnityEditor;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -12,11 +14,13 @@ public class Enemy : MonoBehaviour
     public Rigidbody2D _Rigidbody { get; private set; }
     public Animator Animator { get; private set; }
 
+    public event Action OnHealthChange;
+
     private EnemyStateMachine stateMachine;
 
     public bool IsMyTurn = false;
 
-    private float maxHealth;
+    public float maxHealth;
     public float curHealth;
 
     private void Awake()
@@ -49,10 +53,21 @@ public class Enemy : MonoBehaviour
     public void TakenDamage(float damage)
     {
         curHealth -= damage;
+        if( curHealth >= 0) CallHpChanged();
         if (curHealth < 0)
         {
             Animator.SetTrigger(AnimData.DeadParameterHash);
             Destroy(gameObject, 1.5f);
         }
+
+    }
+    public void CallHpChanged()
+    {
+        OnHealthChange?.Invoke();
+    }
+
+    public void EnemyShoot()
+    {
+        Instantiate(Data.projectile, transform.position, Quaternion.identity);
     }
 }
