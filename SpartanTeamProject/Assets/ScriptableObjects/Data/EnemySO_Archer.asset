@@ -18,4 +18,4 @@ MonoBehaviour:
   <ChasingRange>k__BackingField: 5
   <AttackRange>k__BackingField: 3
   <Damage>k__BackingField: 10
-  <projectile>k__BackingField: {fileID: 8572482298909959174, guid: c1e67e64d5659bc4ea5eb6f5ab642184, type: 3}
+  <projectile>k__BackingField: {fileID: 8572482298909959174, guid: 761724e9736526b44aa3654f6aca2261, type: 3}

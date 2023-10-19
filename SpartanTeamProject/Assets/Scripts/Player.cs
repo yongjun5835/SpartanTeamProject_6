@@ -4,6 +4,27 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private float maxHealth;
+    public float curHealth;
+
+    public bool isDead;
+
+    private void Start()
+    {
+        curHealth = maxHealth;
+        isDead = false;
+    }
+
+    public void TakenDamage(float damage)
+    {
+        curHealth -= damage;
+        if (curHealth < 0)
+        {
+            curHealth = 0f;
+            isDead = true;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Item")) 
