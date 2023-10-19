@@ -13,9 +13,9 @@ public class ProjectileManager : MonoBehaviour
     [SerializeField]
     private GameObject[] projectiles;
     [Header("# Enemy's Projectiles")]
-    public GameObject enemyProjectile;
+    public GameObject[] enemyProjectile;
 
-    private GameObject selectedProjectile;
+    public GameObject selectedProjectile;
 
     private void Awake()
     {
@@ -52,8 +52,8 @@ public class ProjectileManager : MonoBehaviour
 
         Debug.Log(selectedProjectile);
     }
-    public void EnemyShoot(Vector3 shootTip)
+    public void EnemyShoot(Vector3 shootTip, GameObject prefab)
     {
-        GameObject projectile = Instantiate(enemyProjectile, shootTip, Quaternion.identity);
+        Instantiate(prefab, shootTip, Quaternion.identity);
     }
 }

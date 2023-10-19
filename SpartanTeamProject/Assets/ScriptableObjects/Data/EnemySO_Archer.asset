@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b093c72294e89ae4898ce01474a3203c, type: 3}
-  m_Name: EnemySO
+  m_Name: EnemySO_Archer
   m_EditorClassIdentifier: 
   <Health>k__BackingField: 100
   <BaseSpeed>k__BackingField: 2
   <RunSpeedModifier>k__BackingField: 2
   <ChasingRange>k__BackingField: 5
   <AttackRange>k__BackingField: 3
-  <FleeingRange>k__BackingField: 1
   <Damage>k__BackingField: 10
-  <AttackDelay>k__BackingField: 0.5
-  <Dealing_Start_TransitionTime>k__BackingField: 0
-  <Dealing_End_TransitionTime>k__BackingField: 0
+  <projectile>k__BackingField: {fileID: 8572482298909959174, guid: 761724e9736526b44aa3654f6aca2261, type: 3}

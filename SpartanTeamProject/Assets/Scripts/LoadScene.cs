@@ -14,6 +14,6 @@ public class LoadScene : MonoBehaviour
 
     public void StageNum()
     {
-        GameManager.Instance.StageNumber = SelectedStage;
+        StageManager.Instance.StageNumber = SelectedStage;
     }
 }

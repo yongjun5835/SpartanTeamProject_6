@@ -25,7 +25,7 @@ public class EnemyIdleState : EnemyGroundState
     public override void Update()
     {
         idleTime += Time.deltaTime;
-        if (idleTime < 2f)
+        if (idleTime < 1.5f)
             return;
         base.Update();
     }  

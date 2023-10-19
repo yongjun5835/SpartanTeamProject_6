@@ -264,7 +264,6 @@ GameObject:
   - component: {fileID: 3995712844007722712}
   - component: {fileID: 7942161202597626709}
   - component: {fileID: 8170635268467893406}
-  - component: {fileID: 2495709036328402590}
   - component: {fileID: 3762163401374927203}
   - component: {fileID: 9157384506387304775}
   m_Layer: 0
@@ -288,7 +287,7 @@ Transform:
   m_Children:
   - {fileID: 2686250066717970848}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7942161202597626709
 Animator:
@@ -332,20 +331,7 @@ MonoBehaviour:
     deadParameterName: Dead
     attackParameterName: Attack
   IsMyTurn: 0
---- !u!114 &2495709036328402590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6688097232492580548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ac114dbadf134f4b902496f732a3e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  drag: 0.3
+  curHealth: 0
 --- !u!50 &3762163401374927203
 Rigidbody2D:
   serializedVersion: 4
