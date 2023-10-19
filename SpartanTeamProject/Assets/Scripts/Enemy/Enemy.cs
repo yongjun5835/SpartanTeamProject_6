@@ -68,6 +68,7 @@ public class Enemy : MonoBehaviour
 
     public void EnemyShoot()
     {
+        Debug.Log("적 공격 실행");
         Instantiate(Data.projectile, transform.position, Quaternion.identity);
     }
 }
