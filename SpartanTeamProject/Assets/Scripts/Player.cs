@@ -28,6 +28,14 @@ public class Player : MonoBehaviour
         }
         CallHpChanged();
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            curHealth += 50;
+        }
+    }
+    
 
     public void CallHpChanged() 
     {
