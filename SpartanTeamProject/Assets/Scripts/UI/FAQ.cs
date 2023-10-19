@@ -9,23 +9,16 @@ public class FAQ : MonoBehaviour
     public GameObject Option;
  
     bool pause = false;
-    public void StopTime()
+    public void ToggleOption()
     {
-        Option.SetActive(true);
-        if (Option.activeSelf == true && !pause)
+        if (Option.activeSelf == false)
         {
-            pause = true;
-            Time.timeScale = 0;
+            Option.SetActive(true); // 스크립트를 활성화
         }
-        else if (Option.activeSelf == true && pause)
+        else
         {
-            pause = false;
-            Option.SetActive(false);
-            Time.timeScale = 1;
+            Option.SetActive(false); // 스크립트를 비활성화
         }
-
-
-      
     }
 
 
