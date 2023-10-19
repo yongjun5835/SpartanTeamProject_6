@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
     }
     public void TurnEnd()
     {
-        if (TurnCount % (Enemys.Length + 1) -1 == Enemys.Length)
+        if (Player.gameObject.GetComponent<PlayerController>().IsMyTurn)
         {
             Player.gameObject.GetComponent<PlayerController>().IsMyTurn = false;
             Player.gameObject.GetComponent<PlayerController>().Refresh();
