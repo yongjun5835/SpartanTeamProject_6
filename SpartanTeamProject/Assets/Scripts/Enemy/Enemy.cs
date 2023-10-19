@@ -16,8 +16,13 @@ public class Enemy : MonoBehaviour
 
     public bool IsMyTurn = false;
 
+    private float maxHealth;
+    public float curHealth;
+
     private void Awake()
     {
+        maxHealth = Data.Health;
+
         AnimData.Initialize();
         _Rigidbody = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
@@ -27,6 +32,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        curHealth = maxHealth;
         stateMachine.ChangeState(stateMachine.IdleState);
     }
 
@@ -40,4 +46,14 @@ public class Enemy : MonoBehaviour
     {
         stateMachine.PhysicsUpdate();
     } 
+
+    public void TakenDamage(float damage)
+    {
+        curHealth -= damage;
+        if (curHealth < 0)
+        {
+            Animator.SetTrigger(AnimData.DeadParameterHash);
+            Destroy(gameObject);
+        }
+    }
 }
