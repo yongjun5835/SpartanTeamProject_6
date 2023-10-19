@@ -35,4 +35,10 @@ public class EnemyProjectile : MonoBehaviour
     {
         return Quaternion.Euler(0, 0, Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+            Destroy(this.gameObject);
+    }
 }

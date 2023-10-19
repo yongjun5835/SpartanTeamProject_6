@@ -52,16 +52,17 @@ public class WeaponSelect : MonoBehaviour
 
     public void StartGame()
     {
-        if(GameManager.Instance.StageNumber == 1)
-        {
-            SceneManager.LoadScene("Stage1");
-        }else if (GameManager.Instance.StageNumber == 2)
-        {
-            SceneManager.LoadScene("Stage2");
-        }else if (GameManager.Instance.StageNumber == 3)
-        {
-            SceneManager.LoadScene("Stage3");
-        }
+        //if(GameManager.Instance.StageNumber == 1)
+        //{
+        //    SceneManager.LoadScene("Stage1");
+        //}else if (GameManager.Instance.StageNumber == 2)
+        //{
+        //    SceneManager.LoadScene("Stage2");
+        //}else if (GameManager.Instance.StageNumber == 3)
+        //{
+        //    SceneManager.LoadScene("Stage3");
+        //}
+        SceneManager.LoadScene("Stage" + StageManager.Instance.StageNumber);
         DontDestroyOnLoad(WeaponUI);
         foreach(var t in NoUse)
         {
