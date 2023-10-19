@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private float maxHealth;
+    public float maxHealth;
     public float curHealth;
+
+    public event Action OnHealthChange;
 
     public bool isDead;
 
@@ -23,6 +26,12 @@ public class Player : MonoBehaviour
             curHealth = 0f;
             isDead = true;
         }
+        CallHpChanged();
+    }
+
+    public void CallHpChanged() 
+    {
+        OnHealthChange?.Invoke();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
