@@ -15,7 +15,7 @@ public class ProjectileManager : MonoBehaviour
     [Header("# Enemy's Projectiles")]
     public GameObject enemyProjectile;
 
-    private GameObject selectedProjectile;
+    public GameObject selectedProjectile;
 
     private void Awake()
     {

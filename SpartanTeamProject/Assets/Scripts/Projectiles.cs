@@ -5,6 +5,8 @@ using UnityEngine.Tilemaps;
 
 public class Porjectiles : MonoBehaviour
 {
+    [SerializeField] private WeaponSO data;
+
     private void Update()
     {
         transform.right = GetComponent<Rigidbody2D>().velocity;
@@ -22,6 +24,10 @@ public class Porjectiles : MonoBehaviour
             collision.gameObject.GetComponent<Tilemap>().SetTile(new Vector3Int(cellPos.x, cellPos.y + 1), null);
 
             Destroy(this.gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            collision.gameObject.GetComponent<Enemy>().TakenDamage(data.WeaponDamage);
         }
     }
 }
