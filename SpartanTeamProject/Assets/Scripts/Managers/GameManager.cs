@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,9 +23,10 @@ public class GameManager : MonoBehaviour
     public int TurnCount;
     public Text timer;
     public Text EnemyLeft;
-    float time;
+    float time = 10f;
     bool result = false;
     bool IsCourutineRunning = false;
+    bool turnStarted = false;
     
     private void Awake()
     {
@@ -44,21 +46,27 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
+        WaitForSeconds waitForSec = new WaitForSeconds(time);
         TurnCheck();
-        time = float.Parse(timer.text);
         time -= Time.deltaTime;
+        //DateTime.Now
         timer.text = time.ToString("N2");
         int EnemyCount = Enemys.Length;
         EnemyLeft.text = "³²Àº Àû : " + EnemyCount.ToString();
-        if (!IsCourutineRunning)
+        if (!IsCourutineRunning && !turnStarted)
         {
-            StartCoroutine(Turn());
+            //TurnStart();
+            StartCoroutine(Turn(waitForSec));
+            //StartCoroutine(Turn());
         }
         if(time < 0)
         {
             time = 10f;
             timer.text = time.ToString() ;
+            TurnEnd();
+            IsCourutineRunning = false;
             TurnCount++;
+            turnStarted = false;
         }
     }
     public void GameOver()
@@ -101,6 +109,8 @@ public class GameManager : MonoBehaviour
         if (TurnCount % (Enemys.Length +1) == Enemys.Length)
         {
             Player.gameObject.GetComponent<PlayerController>().IsMyTurn = true;
+            Player.gameObject.GetComponent<PlayerController>().isSetDir = false;
+            Debug.Log($"isSetDir {Player.gameObject.GetComponent<PlayerController>().isSetDir}");
         }
         else
         {
@@ -134,9 +144,10 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    IEnumerator Turn()
-    {
+   // IEnumerator Turn(WaitForSeconds waitTime)
+    //IEnumerator Turn()
+    IEnumerator Turn(WaitForSeconds waitTime)
+    { 
         while (true)
         {
             IsCourutineRunning = true;

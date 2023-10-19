@@ -6,6 +6,9 @@ public abstract class StateMachine : MonoBehaviour
 
     public void ChangeState(IState newState)
     {
+        if (curState == newState)
+            return;
+
         curState?.Exit();
         curState = newState;
         curState?.Enter();

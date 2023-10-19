@@ -9,9 +9,11 @@ public class ProjectileManager : MonoBehaviour
     public PlayerController playerController;
     [SerializeField]
     private Transform projectileSpawnPoint;
-    [Header("# Projectiles")]
+    [Header("# Player's Projectiles")]
     [SerializeField]
     private GameObject[] projectiles;
+    [Header("# Enemy's Projectiles")]
+    public GameObject enemyProjectile;
 
     private GameObject selectedProjectile;
 
@@ -31,7 +33,7 @@ public class ProjectileManager : MonoBehaviour
     public void Shoot()
     {
         playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        projectileSpawnPoint = GameObject.FindGameObjectWithTag("ProjectileSpawnPoint").transform;
+        projectileSpawnPoint = GameObject.FindGameObjectWithTag("Player").transform.GetChild(2);
         GameObject projectile = Instantiate(selectedProjectile, projectileSpawnPoint.position, Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward));
         GameManager.Instance.cameraController.SetTarget(projectile.transform);
         Vector3 dir = Quaternion.AngleAxis(playerController.aimAngle, Vector3.forward) * Vector3.right;
@@ -49,13 +51,8 @@ public class ProjectileManager : MonoBehaviour
 
         Debug.Log(selectedProjectile);
     }
-    public void EnemyShoot( int i, float shootPower, Vector3 shootTip)
+    public void EnemyShoot(Vector3 shootTip)
     {
-        Debug.Log("���� ȣ���?6");
-        GameObject projectile = Instantiate(projectiles[0], shootTip, Quaternion.AngleAxis(40f, Vector3.forward));
-        GameManager.Instance.cameraController.SetTarget(projectile.transform);
-        Vector3 dir = Quaternion.AngleAxis(40f, Vector3.forward) * Vector3.right;
-        projectile.GetComponent<Rigidbody2D>().AddForce(dir * shootPower, ForceMode2D.Impulse);
-        Debug.Log($"shootPoewr: {shootPower}");
+        GameObject projectile = Instantiate(enemyProjectile, shootTip, Quaternion.identity);
     }
 }

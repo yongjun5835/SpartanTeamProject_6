@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float currentPower = 0;
     public float moveLimit = 5;
 
-    private bool isSetDir = false;
+    public bool isSetDir = false;
     private bool isSetPower = false;
     private bool isShoot = false;
     private bool freezeMove = false;
@@ -89,11 +89,8 @@ public class PlayerController : MonoBehaviour
 
     public void SettingDir()
     {
-        Debug.Log($"마우스 버튼 다운 {Input.GetMouseButtonDown(0)} 프레임카운트 {Time.frameCount}");
-        if (isSetDir == false)
-            isSetDir = true;
-        else
-            isSetDir = false;
+        Debug.Log($"마우스 버튼 다운 {Input.GetMouseButtonDown(0)} 프레임카운트 {Time.frameCount} 이즈셋dir {isSetDir}");
+        StartCoroutine(activateSetDir());
     }
 
     public void FindAngle()
@@ -110,6 +107,15 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         testBtn.GetComponent<Button>().interactable = true;
+    }
+
+    IEnumerator activateSetDir()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        if (isSetDir == false)
+            isSetDir = true;
+        else
+            isSetDir = false;
     }
 
     public void Refresh()

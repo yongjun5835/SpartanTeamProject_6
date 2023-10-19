@@ -5,5 +5,4 @@ public interface IState
     public void Exit();    
     public void Update();
     public void PhysicsUpdate();
-
 }
