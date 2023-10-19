@@ -19,9 +19,9 @@ public class ItemSlot : MonoBehaviour
     [SerializeField] private TextMeshProUGUI itemTitle;
 
 
-    
-    private int currentItemSlot = 0;
-    private int maxSlots = 5;
+
+    private int currentItemSlot;    // 시작 아이템 슬릇
+    private int maxSlots;           // 아이템 슬릇 칸
     
 
 
@@ -35,19 +35,13 @@ public class ItemSlot : MonoBehaviour
         weaponTitle.gameObject.SetActive(true);
         itemTitle.gameObject.SetActive(false);
 
+        currentItemSlot = 0;
+        maxSlots = 5;
 
-
-        for (int i = 0; i < maxSlots; i++)
+        foreach (Button itemSlotButton in itemSlots)
         {
-            weaponSlots.gameObject.SetActive(true);
-            itemSlots[i].gameObject.SetActive(true);
-
-            Color itemSlotColor = itemSlots[i].image.color;
-            itemSlotColor.a = 0.1f;
-            itemSlots[i].image.color = itemSlotColor;
+            itemSlotButton.interactable = false;
         }
-             
-
     }
 
     private void OpenSlot_Item()
@@ -85,50 +79,43 @@ public class ItemSlot : MonoBehaviour
             itemTitle.gameObject.SetActive(true);
         }
 
+
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            ActivateSlots();
+            OnItemAcquired();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            AcquireItem();
+            OnItemUsed();
         }
     }
-    // 아이템 슬릇 활성화
-    public void ActivateSlots()
+
+    public void ActivateItemSlot()
     {
         if (currentItemSlot < maxSlots)
         {
-
-            Color itemSlotColor = itemSlots[currentItemSlot].image.color;
-            itemSlotColor.a = 1.0f;
-            itemSlots[currentItemSlot].image.color = itemSlotColor;
-
+            itemSlots[currentItemSlot].interactable = true;
             currentItemSlot++;
         }
     }
 
-    //아이템 사용 시 슬릇 비활성화
-    public void UseItem()
+    public void DeactivateItemSlot()
     {
-
         if (currentItemSlot > 0)
         {
-
-            // 가장 최근 아이템 슬롯을 비활성화하고 현재 아이템 슬롯 인덱스를 감소
-            itemSlots[currentItemSlot - 1].gameObject.SetActive(false);
             currentItemSlot--;
+            itemSlots[currentItemSlot].interactable = false;
         }
     }
 
-    public void AcquireItem()
+    public void OnItemAcquired()
     {
-        if (currentItemSlot < maxSlots)
-        {
-            itemSlots[currentItemSlot].gameObject.SetActive(true);
-            currentItemSlot++;
-        }
+        ActivateItemSlot();
     }
 
+    public void OnItemUsed()
+    {
+        DeactivateItemSlot();
+    }
 }

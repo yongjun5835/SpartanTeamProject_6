@@ -7655,12 +7655,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455a1a49ed3ca5844adc42960834bfb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 1127717425}
+  item: {fileID: 0}
   minX: 20
   maxX: 35
   minY: 40
   maxY: 30
   spawnInterval: 10
+  timer: 0
 --- !u!1 &1128323590
 GameObject:
   m_ObjectHideFlags: 0
@@ -18503,6 +18504,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 388351464}
     m_Modifications:
+    - target: {fileID: -2246023854429167857, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2870119736180052945, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
       propertyPath: m_SortingOrder
       value: 10
@@ -18520,12 +18525,20 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6525974654222690231, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525974654222690231, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525974654222690231, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -960
+      value: -927.28
       objectReference: {fileID: 0}
     - target: {fileID: 6525974654222690231, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -540
+      value: -516.96
       objectReference: {fileID: 0}
     - target: {fileID: 6525974654222690231, guid: d973c5fb5c016d04db3a6ea5d5b970bc, type: 3}
       propertyPath: m_LocalPosition.z
