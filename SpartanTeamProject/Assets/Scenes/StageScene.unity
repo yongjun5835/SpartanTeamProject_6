@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbbdfc0589885314ca66c96ba71d9c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: WeaponSelect_T
+  SceneName: WeaponSelect
   SelectedStage: 2
 --- !u!1 &391717154
 GameObject:
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbbdfc0589885314ca66c96ba71d9c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: WeaponSelect_T
+  SceneName: WeaponSelect
   SelectedStage: 3
 --- !u!1 &868067634
 GameObject:
@@ -1483,5 +1483,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbbdfc0589885314ca66c96ba71d9c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: WeaponSelect_T
+  SceneName: WeaponSelect
   SelectedStage: 1
