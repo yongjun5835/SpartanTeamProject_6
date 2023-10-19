@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] Enemys;
 
     [SerializeField] private GameObject Player;
+    [SerializeField] TurnAlarmUI turnAlarmUI;
     public CameraController cameraController;
     public int TurnCount;
     public Text timer;
@@ -113,6 +114,9 @@ public class GameManager : MonoBehaviour
         if (TurnCount % (Enemys.Length +1) == Enemys.Length)
         {
             Player.gameObject.GetComponent<PlayerController>().IsMyTurn = true;
+            turnAlarmUI.SetText("Player Turn");
+            turnAlarmUI.Show();
+            cameraController.SetTarget(Player.transform);
             Player.gameObject.GetComponent<PlayerController>().isSetDir = false;
             Debug.Log($"isSetDir {Player.gameObject.GetComponent<PlayerController>().isSetDir}");
         }
@@ -121,10 +125,17 @@ public class GameManager : MonoBehaviour
             if (TurnCount % (Enemys.Length + 1) == 0)
             {
                 Enemys[0].gameObject.GetComponent<Enemy>().IsMyTurn = true;
+                turnAlarmUI.SetText("Enemy 0 Turn");
+                turnAlarmUI.Show();
+                cameraController.SetTarget(Enemys[0].transform);
             }
             else
             {
-                Enemys[TurnCount % (Enemys.Length + 1)].gameObject.GetComponent<Enemy>().IsMyTurn = true;
+                int enemyNum = TurnCount % (Enemys.Length + 1);
+                Enemys[enemyNum].gameObject.GetComponent<Enemy>().IsMyTurn = true;
+                turnAlarmUI.SetText("Enemy" + enemyNum.ToString() +" Turn");
+                turnAlarmUI.Show();
+                cameraController.SetTarget(Enemys[enemyNum].transform);
             }
         }
     }
