@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyStateMachine : StateMachine
 {
-    public Enemy Enemy { get; }
+    public Enemy Enemy { get; private set; }
 
     public Transform Target { get; private set; }
 
