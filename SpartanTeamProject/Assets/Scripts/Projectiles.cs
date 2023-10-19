@@ -28,6 +28,7 @@ public class Porjectiles : MonoBehaviour
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<Enemy>().TakenDamage(data.WeaponDamage);
+            Destroy(this.gameObject);
         }
     }
 }

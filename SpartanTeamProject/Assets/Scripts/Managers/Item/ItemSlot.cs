@@ -35,7 +35,7 @@ public class ItemSlot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        openWeaponSlot.onClick.AddListener(OpenSlot_Weapon);
+        //openWeaponSlot.onClick.AddListener(OpenSlot_Weapon);
         openItemSlot.onClick.AddListener(OpenSlot_Item);
         weaponPanel.SetActive(true);
         itemPanel.SetActive(false);
