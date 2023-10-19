@@ -40,6 +40,7 @@ public class ProjectileManager : MonoBehaviour
         float shootPower = playerController.currentPower / 5;
         projectile.GetComponent<Rigidbody2D>().AddForce(dir * shootPower, ForceMode2D.Impulse);
         Debug.Log($"shootPoewr: {shootPower}");
+
     }
 
     public void selectBtn(string tag)
