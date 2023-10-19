@@ -17,8 +17,5 @@ MonoBehaviour:
   <RunSpeedModifier>k__BackingField: 2
   <ChasingRange>k__BackingField: 5
   <AttackRange>k__BackingField: 3
-  <FleeingRange>k__BackingField: 1
   <Damage>k__BackingField: 10
-  <AttackDelay>k__BackingField: 0.5
-  <Dealing_Start_TransitionTime>k__BackingField: 0
-  <Dealing_End_TransitionTime>k__BackingField: 0
+  <projectile>k__BackingField: {fileID: 8572482298909959174, guid: c1e67e64d5659bc4ea5eb6f5ab642184, type: 3}
