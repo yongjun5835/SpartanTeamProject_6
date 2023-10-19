@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class ItemSlot : MonoBehaviour
 {
@@ -18,11 +19,17 @@ public class ItemSlot : MonoBehaviour
     [SerializeField] private TextMeshProUGUI weaponTitle;
     [SerializeField] private TextMeshProUGUI itemTitle;
 
+    [SerializeField] public Sprite healthPotionSprite;
+    [SerializeField] public Sprite doubleAmmoSprite;
+    [SerializeField] private List<Image> itemSlotImage;
+
+    private ItemType[] itemTypes;
 
 
     private int currentItemSlot;    // 시작 아이템 슬릇
     private int maxSlots;           // 아이템 슬릇 칸
-    
+
+
 
 
     // Start is called before the first frame update
@@ -37,6 +44,13 @@ public class ItemSlot : MonoBehaviour
 
         currentItemSlot = 0;
         maxSlots = 5;
+
+        itemTypes = new ItemType[maxSlots];
+
+        for (int i = 0; i < maxSlots; i++)
+        {
+            itemTypes[i] = (ItemType)Random.Range(1, 3);
+        }
 
         foreach (Button itemSlotButton in itemSlots)
         {
@@ -78,16 +92,14 @@ public class ItemSlot : MonoBehaviour
             weaponTitle.gameObject.SetActive(false);
             itemTitle.gameObject.SetActive(true);
         }
-
-
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+             
+        else if( Input.GetKeyDown(KeyCode.Alpha3))
         {
-            OnItemAcquired();
+            ONDoubleUsed();
         }
-
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            OnItemUsed();
+            OnHealUsed();
         }
     }
 
@@ -96,6 +108,7 @@ public class ItemSlot : MonoBehaviour
         if (currentItemSlot < maxSlots)
         {
             itemSlots[currentItemSlot].interactable = true;
+            ItemType curItem = itemTypes[currentItemSlot];
             currentItemSlot++;
         }
     }
@@ -112,10 +125,53 @@ public class ItemSlot : MonoBehaviour
     public void OnItemAcquired()
     {
         ActivateItemSlot();
+        if (currentItemSlot > 0)
+        {
+            ItemType curItem = itemTypes[currentItemSlot - 1];
+
+            // 슬롯 인덱스에 따라 아이템 이미지 설정
+            if (itemSlotImage != null)
+            {
+                Sprite itemSprite = null;
+                if (currentItemSlot >= 1 && currentItemSlot <= 3)
+                {
+                    
+                    itemSprite = healthPotionSprite;
+                }
+                else if (currentItemSlot >= 4 && currentItemSlot <= 5)
+                {
+                    
+                    itemSprite =  doubleAmmoSprite;
+                }
+
+                if (itemSprite != null)
+                {
+                    itemSlotImage[currentItemSlot - 1].sprite = itemSprite;
+                }
+            }
+        }
     }
 
-    public void OnItemUsed()
+    public void OnHealUsed()
     {
+        if (currentItemSlot >= 4 && currentItemSlot <= 5)
+        {
+            // 슬롯 인덱스 4~5에서 포션 아이템 이미지를 지웁니다.
+            itemSlotImage[currentItemSlot - 1].sprite = null;
+        }
+        DeactivateItemSlot();
+        
+    }
+
+    public void ONDoubleUsed()
+    {
+        if (currentItemSlot >= 1 && currentItemSlot <= 3)
+        {
+            // 슬롯 인덱스 1~3에서 더블 아이템 이미지를 지웁니다.
+            itemSlotImage[currentItemSlot - 1].sprite = null;
+        }
         DeactivateItemSlot();
     }
+
+   
 }

@@ -13,9 +13,9 @@ public class ProjectileManager : MonoBehaviour
     [SerializeField]
     private GameObject[] projectiles;
     [Header("# Enemy's Projectiles")]
-    public GameObject enemyProjectile;
+    public GameObject[] enemyProjectile;
 
-    private GameObject selectedProjectile;
+    public GameObject selectedProjectile;
 
     private void Awake()
     {
@@ -40,6 +40,7 @@ public class ProjectileManager : MonoBehaviour
         float shootPower = playerController.currentPower / 5;
         projectile.GetComponent<Rigidbody2D>().AddForce(dir * shootPower, ForceMode2D.Impulse);
         Debug.Log($"shootPoewr: {shootPower}");
+
     }
 
     public void selectBtn(string tag)
@@ -51,8 +52,8 @@ public class ProjectileManager : MonoBehaviour
 
         Debug.Log(selectedProjectile);
     }
-    public void EnemyShoot(Vector3 shootTip)
+    public void EnemyShoot(Vector3 shootTip, GameObject prefab)
     {
-        GameObject projectile = Instantiate(enemyProjectile, shootTip, Quaternion.identity);
+        Instantiate(prefab, shootTip, Quaternion.identity);
     }
 }
