@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
         if (curHealth < 0)
         {
             Animator.SetTrigger(AnimData.DeadParameterHash);
-            Destroy(gameObject);
+            Destroy(gameObject, 1.5f);
         }
     }
 }
