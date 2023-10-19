@@ -185,6 +185,14 @@ MonoBehaviour:
   - {fileID: 8441685404018108785}
   weaponTitle: {fileID: 8399056603421303139}
   itemTitle: {fileID: 3570327343277105752}
+  healthPotionSprite: {fileID: 21300000, guid: d6d45e97d6240da43818cab00a5eea90, type: 3}
+  doubleAmmoSprite: {fileID: 21300000, guid: 3d0cc86eee0abce4f98f3dd89e29f31c, type: 3}
+  itemSlotImage:
+  - {fileID: 5617161529964651682}
+  - {fileID: 61373871753295223}
+  - {fileID: 7092004976794798595}
+  - {fileID: 7402302235121366426}
+  - {fileID: 2293086282126279751}
 --- !u!1 &478968948
 GameObject:
   m_ObjectHideFlags: 0

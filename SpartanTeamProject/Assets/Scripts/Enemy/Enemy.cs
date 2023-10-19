@@ -68,7 +68,9 @@ public class Enemy : MonoBehaviour
 
     public void EnemyShoot()
     {
-        Debug.Log("적 공격 실행");
+        Debug.Log("여기 호출돼?1");
+        Debug.Log(Data.projectile);
+        Debug.Log(transform.position);
         Instantiate(Data.projectile, transform.position, Quaternion.identity);
     }
 }

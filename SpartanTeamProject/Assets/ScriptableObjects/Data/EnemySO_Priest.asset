@@ -15,7 +15,7 @@ MonoBehaviour:
   <Health>k__BackingField: 100
   <BaseSpeed>k__BackingField: 1.5
   <RunSpeedModifier>k__BackingField: 1.5
-  <ChasingRange>k__BackingField: 5
-  <AttackRange>k__BackingField: 3
+  <ChasingRange>k__BackingField: 8
+  <AttackRange>k__BackingField: 15
   <Damage>k__BackingField: 15
   <projectile>k__BackingField: {fileID: 8572482298909959174, guid: 426a9c666b311384e8bed30d3bc08834, type: 3}

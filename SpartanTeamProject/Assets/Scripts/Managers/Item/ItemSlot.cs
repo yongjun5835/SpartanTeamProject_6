@@ -92,11 +92,13 @@ public class ItemSlot : MonoBehaviour
             weaponTitle.gameObject.SetActive(false);
             itemTitle.gameObject.SetActive(true);
         }
-             
-        else if( Input.GetKeyDown(KeyCode.Alpha3))
+
+
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             ONDoubleUsed();
         }
+
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             OnHealUsed();
@@ -135,13 +137,13 @@ public class ItemSlot : MonoBehaviour
                 Sprite itemSprite = null;
                 if (currentItemSlot >= 1 && currentItemSlot <= 3)
                 {
-                    
-                    itemSprite = healthPotionSprite;
+                    // 슬롯 인덱스 1~3일 때는 더블 아이템 이미지로 설정
+                    itemSprite = doubleAmmoSprite;
                 }
                 else if (currentItemSlot >= 4 && currentItemSlot <= 5)
                 {
-                    
-                    itemSprite =  doubleAmmoSprite;
+                    // 슬롯 인덱스 4~5일 때는 포션 아이템 이미지로 설정
+                    itemSprite = healthPotionSprite;
                 }
 
                 if (itemSprite != null)
@@ -156,22 +158,19 @@ public class ItemSlot : MonoBehaviour
     {
         if (currentItemSlot >= 4 && currentItemSlot <= 5)
         {
-            // 슬롯 인덱스 4~5에서 포션 아이템 이미지를 지웁니다.
+            
             itemSlotImage[currentItemSlot - 1].sprite = null;
         }
         DeactivateItemSlot();
-        
     }
 
     public void ONDoubleUsed()
     {
         if (currentItemSlot >= 1 && currentItemSlot <= 3)
         {
-            // 슬롯 인덱스 1~3에서 더블 아이템 이미지를 지웁니다.
+            
             itemSlotImage[currentItemSlot - 1].sprite = null;
         }
         DeactivateItemSlot();
     }
-
-   
 }

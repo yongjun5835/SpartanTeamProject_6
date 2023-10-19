@@ -18,6 +18,8 @@ TagManager:
   - Weapon_Weapon8
   - Weapon_Weapon9
   - ProjectileSpawnPoint
+  - Undefined
+  - EnemyWeapon1
   layers:
   - Default
   - TransparentFX
