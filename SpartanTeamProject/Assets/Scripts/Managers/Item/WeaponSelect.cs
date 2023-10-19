@@ -76,7 +76,7 @@ public class WeaponSelect : MonoBehaviour
         {
 
             bool isSelected = selectedWeapons.Contains(weaponButton);
-            weaponButton.GetComponent<Image>().color = isSelected ? Color.green : Color.white;
+            weaponButton.GetComponent<Image>().color = isSelected ? Color.white : Color.gray;
         }
 
     }
