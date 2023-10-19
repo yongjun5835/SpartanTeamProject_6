@@ -10,8 +10,6 @@ public class EnemyStateMachine : StateMachine
     public EnemyProwlState ProwlState { get; }
     public EnemyChasingState ChasingState { get; }
     public EnemyAttackState AttackState { get; }
-    public EnemyFleeingState FleeingState { get; }
-
     public float MovementSpeed { get; private set; }
     public float MovementSpeedModifier { get; set; } = 1f;
 
@@ -24,7 +22,6 @@ public class EnemyStateMachine : StateMachine
         ProwlState = new EnemyProwlState(this);
         ChasingState = new EnemyChasingState(this);
         AttackState = new EnemyAttackState(this);
-        FleeingState = new EnemyFleeingState(this);
         MovementSpeed = enemy.Data.BaseSpeed;
     }
 }
