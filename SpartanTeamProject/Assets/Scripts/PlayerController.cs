@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour
         Crosshair.gameObject.SetActive(false);
         testBtn.GetComponent<Button>().interactable = true;
         freezeMove = false;
+        startPos = transform.position;
     }
 
     public void Move()
