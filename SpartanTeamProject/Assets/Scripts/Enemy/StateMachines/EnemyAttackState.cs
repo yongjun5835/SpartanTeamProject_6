@@ -1,4 +1,4 @@
-
+using UnityEngine;
 public class EnemyAttackState : EnemyGroundState
 {
     public EnemyAttackState(EnemyStateMachine enemyStateMachine) : base(enemyStateMachine)
@@ -8,7 +8,8 @@ public class EnemyAttackState : EnemyGroundState
     {
         base.Enter();
         stateMachine.Enemy.Animator.SetTrigger(stateMachine.Enemy.AnimData.AttackParameterHash);
-        ProjectileManager.instance.EnemyShoot(stateMachine.Enemy.transform.position, stateMachine.Enemy.Data.projectile);
+        Debug.Log("ø©±‚ »£√‚µ≈?0");
+        CallEnemyShoot();
     }
 
     public override void Exit()

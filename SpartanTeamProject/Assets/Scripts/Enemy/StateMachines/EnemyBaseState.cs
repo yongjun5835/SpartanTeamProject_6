@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class EnemyBaseState : IState
 {
@@ -100,10 +101,10 @@ public class EnemyBaseState : IState
         {
             targetPos = TargetPos.AttackRange;
         }
-        else if (playerDistanceSqr <= stateMachine.Enemy.Data.ChasingRange * stateMachine.Enemy.Data.ChasingRange)
-        {
-            targetPos = TargetPos.ChaseRange;
-        } 
+        //else if (playerDistanceSqr <= stateMachine.Enemy.Data.ChasingRange * stateMachine.Enemy.Data.ChasingRange)
+        //{
+        //    targetPos = TargetPos.ChaseRange;
+        //} 
         else
         {
             targetPos = TargetPos.NotInRange;
@@ -129,5 +130,11 @@ public class EnemyBaseState : IState
     protected void OnAttack()
     {
         stateMachine.ChangeState(stateMachine.AttackState);
+    }
+
+    protected void CallEnemyShoot()
+    {
+        Debug.Log("¿©±â È£ÃâµÅ?5");
+        stateMachine.Enemy.EnemyShoot();
     }
 }

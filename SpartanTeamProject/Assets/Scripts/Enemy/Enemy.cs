@@ -68,6 +68,9 @@ public class Enemy : MonoBehaviour
 
     public void EnemyShoot()
     {
+        Debug.Log("ø©±‚ »£√‚µ≈?1");
+        Debug.Log(Data.projectile);
+        Debug.Log(transform.position);
         Instantiate(Data.projectile, transform.position, Quaternion.identity);
     }
 }
