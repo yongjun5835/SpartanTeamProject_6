@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyProjectile : MonoBehaviour
 {
-    [SerializeField] private WeaponSO data;
-
     public float m_Speed = 10;
     public float m_HeightArc = 1;
     public Transform m_Target;
@@ -41,8 +39,7 @@ public class EnemyProjectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-            collision.gameObject.GetComponent<Player>().TakenDamage(data.WeaponDamage);
-        Destroy(this.gameObject);
+            Destroy(this.gameObject);
     }
 
 }
