@@ -20,6 +20,6 @@ public class MoveMainScene : MonoBehaviour
 
     public void MoveScene()
     {
-        SceneManager.LoadScene("IntroScene");
+        SceneManager.LoadScene("StageScene");
     }
 }
