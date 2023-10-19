@@ -16,4 +16,4 @@ MonoBehaviour:
   WeaponType: Weapon_Weapon2
   WeaponDamage: 10
   WeaponRange: 5
-  WeaponImg: {fileID: 21300000, guid: 104cef92c08e73442a0383cfd05993c7, type: 3}
+  WeaponImg: {fileID: 21300000, guid: 51e7b1aef13fc0f4d9f6bba43c1882a1, type: 3}
