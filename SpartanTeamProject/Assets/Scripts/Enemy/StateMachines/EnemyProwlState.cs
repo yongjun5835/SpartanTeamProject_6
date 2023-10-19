@@ -26,9 +26,9 @@ public class EnemyProwlState : EnemyGroundState
     {
         base.Update();
         Move();
-        if (timer >= 2f)
+        if (baseTimer >= 2f)
         {
-            timer = 0f;
+            baseTimer = 0f;
             OnIdle();
         }
     }
@@ -62,7 +62,6 @@ public class EnemyProwlState : EnemyGroundState
     
     protected override void Move(Vector3 direction)
     {
-        Debug.Log("πÊ«‚" + direction);
         float movementSpeed = GetMovementSpeed();
         Vector2 movePos = new Vector2(direction.x, 0f);
         Vector2 goalPos = stateMachine.Enemy._Rigidbody.position + movePos;

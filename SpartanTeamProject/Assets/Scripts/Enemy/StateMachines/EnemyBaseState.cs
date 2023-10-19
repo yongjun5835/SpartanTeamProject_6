@@ -5,7 +5,7 @@ public class EnemyBaseState : IState
     protected EnemyStateMachine stateMachine;
     protected readonly EnemySO data;
 
-    protected float timer = 0;
+    protected float baseTimer = 0;
 
     protected enum TargetPos
     {
@@ -30,7 +30,7 @@ public class EnemyBaseState : IState
     }
     public virtual void Update()
     {
-        timer += Time.deltaTime;        
+        baseTimer += Time.deltaTime;        
 
         if (!stateMachine.Enemy.IsMyTurn)
         {
@@ -48,9 +48,6 @@ public class EnemyBaseState : IState
                 break;
             case TargetPos.AttackRange:
                 OnAttack();
-                break;
-            case TargetPos.FleeRange:
-                OnFleeing();
                 break;
         }
     }   
@@ -98,12 +95,8 @@ public class EnemyBaseState : IState
         TargetPos targetPos;
 
         float playerDistanceSqr = (playerPos - enemyPos).sqrMagnitude;
-
-        if (playerDistanceSqr <= stateMachine.Enemy.Data.FleeingRange * stateMachine.Enemy.Data.FleeingRange)
-        {
-            targetPos = TargetPos.FleeRange;
-        }
-        else if (playerDistanceSqr <= stateMachine.Enemy.Data.AttackRange * stateMachine.Enemy.Data.AttackRange)
+                
+        if (playerDistanceSqr <= stateMachine.Enemy.Data.AttackRange * stateMachine.Enemy.Data.AttackRange)
         {
             targetPos = TargetPos.AttackRange;
         }
@@ -136,10 +129,5 @@ public class EnemyBaseState : IState
     protected void OnAttack()
     {
         stateMachine.ChangeState(stateMachine.AttackState);
-    }
-
-    protected void OnFleeing()
-    {
-        stateMachine.ChangeState(stateMachine.FleeingState);
     }
 }
