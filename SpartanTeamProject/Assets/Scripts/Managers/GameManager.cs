@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public int TurnCount;
     public Text timer;
     public Text EnemyLeft;
+    public int StageNumber;
+
     float time = 10f;
     bool result = false;
     bool IsCourutineRunning = false;
@@ -33,11 +35,13 @@ public class GameManager : MonoBehaviour
         if(instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(this.gameObject);
         }
+        
     }
 
     private void Start()
