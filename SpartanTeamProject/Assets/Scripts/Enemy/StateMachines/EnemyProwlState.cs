@@ -26,9 +26,9 @@ public class EnemyProwlState : EnemyGroundState
     {
         base.Update();
         Move();
-        if (timer >= 2f)
+        if (baseTimer >= 2f)
         {
-            timer = 0f;
+            baseTimer = 0f;
             OnIdle();
         }
     }
